@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #5b7772;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh auto 40vw auto auto auto;
+      grid-template-rows: 80vh auto 40vw auto auto auto;
+}
+
+.sidebar {
+  background-color: #009E74;
+  grid-row: sidebar-start / sidebar-end;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  font-size: 4rem;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
