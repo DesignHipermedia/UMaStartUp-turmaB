@@ -4,11 +4,11 @@
    }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
 }
 #fundo {
-    background-image: url('https://i.pinimg.com/originals/7d/f1/42/7df142ac43453e7cda2c1c7c3f03fd49.jpg');
+    background-image: url('http://w3msolucoesweb.com.br/wp-content/uploads/2013/08/fundo-criacao-de-sites-em-bauru.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -16,14 +16,19 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
+    color: white;
+
 }
 #fundo .button {
     text-decoration: none;
-    color: white;
-    border: white 1px solid;
+    color:black;
+    border: black 1px solid;
     padding: 10px 20px;
     border-radius: 10px;
     margin-top: 40px;
+    display: block;
+    
 }
 #fundo .button:hover {
     background-color: white;
