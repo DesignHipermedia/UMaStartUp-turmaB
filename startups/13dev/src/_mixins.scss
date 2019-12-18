@@ -1,4 +1,4 @@
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
 $sides: (top, bottom, left, right);
 
 @each $space in $spaceamounts {
@@ -9,6 +9,14 @@ $sides: (top, bottom, left, right);
 
     .p-#{str-slice($side, 0, 1)}-#{$space} {
       padding-#{$side}: #{$space}px !important;
+    }
+
+    .w-#{$space} {
+      width: #{$space * 1%} !important;
+    }
+
+    .m-#{$space} {
+      margin: #{$space}px !important;
     }
   }
 }
@@ -29,6 +37,12 @@ $sides: (top, bottom, left, right);
   -webkit-flex: $values;
   -ms-flex: $values;
   flex: $values;
+}
+
+@each $space in (1,2,3,4) {
+  .flex-#{$space} {
+    @include flex($space);
+  }
 }
 
 // row, row-reverse, column, column-reverse

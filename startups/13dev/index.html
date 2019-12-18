@@ -1,54 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Corticeiras Games</title>
+    <title>Starline Games</title>
 </head>
 
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-    }
-    #main {
-        display: flex;
-        flex: 1;
-    }
-    #main > article {
-        flex: 1;
-        order: 1;
-    }
-    #main > nav {
-        flex: 0 0 20vw;
-    }
-    #main > nav {
-        background: #D7E8D4;
-        order: 3;
-    }
-    footer {
-        background: yellowgreen;
-        height: 20vh;
-    }
-    footer, article, nav {
-        padding: 1em;
-    }
-</style>
+<body class="">
+    <div class="container-flex">
+        <div class="box-start"></div>
+        <div class="flex-2">
+            <span id="logo">Starline Games</span>
+            <p class="slogan">Your site of games.</p>
+        </div>
+<!--        <div class="box-3">-->
+<!--            <input id="button-1" type="button" value="donate">-->
+<!--        </div>-->
 
-<body>
-    <header>Header</header>
-    <div id="main">
-        <article>Article</article>
-        <nav>Nav</nav>
+        <!-- header -->
+        <ul class="menu d-flex flex-2">
+            <li class="nav-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">About us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Media</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Sign Up</a>
+            </li>
+        </ul>
+
+        <div class="box-end"></div>
     </div>
-    <footer>Footer</footer>
+    <!-- /header -->
+    <hr class="m-t-20 m-b-50" />
+
+    <!-- slideshow -->
+    <div class="container-flex m-b-20 ">
+        <div class="box-start"></div>
+        <div class="flex-4">
+            <div class="content">
+                <img src="https://via.placeholder.com/100" class="w-100 slide">
+                <div class="legend-slide">
+                    <p>Make the right choise! <br>
+                        Find your favorite games here!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="box-end"></div>
+    </div>
+    <!-- /slideshow -->
+
+    <div class="container-2">
+        <div class="box-start"></div>
+        <div class="box-6">
+            <h4>Our Team</h4>
+            <br/>
+            <img style="float: left; margin-right: 5px" src="Friends.jpg" alt="friends">
+            <p>Lorem ipsum dolor sit amet.</p> <p>Magni corrupti vitae laboriosam nulla debitis.</p>
+            <br>
+            <input class="button-2" type="button" value="See More">
+        </div>
+
+        <div class="box-7">
+            <h4>Our Mission</h4> <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consequatur repellendus modi repellat minus</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quoitaque enim voluptate architecto unde</p>
+            <input class="button-2" type="button" value="See More">
+        </div>
+
+        <div class="box-end"></div>
+    </div>
+
+    <hr style="margin: 50px 0 50px 0">
+
+    <div class="container-3">
+        <div class="box-9"></div>
+        <div class="box-10">
+            <div class="row">
+                <img style="float: left" src="https://via.placeholder.com/50" alt="">
+                <h4>january</h4>
+                <p>lorem ipsum dolor sit amet qur lim son</p> </div>
+            <br>
+            <div class="row"><img style="float: left" src="https://via.placeholder.com/50" alt="">
+                <h4>Febuary</h4> <p>lorem ipsum dolor sit amet qur lim son</p>
+            </div>
+            <br>
+            <div class="row">
+                <img style="float: left" src="https://via.placeholder.com/50" alt="">
+                <h4>March</h4>
+                <p>lorem ipsum dolor sit amet qur lim son</p>
+            </div> <br>
+            <div class="row">
+                <img style="float: left" src="https://via.placeholder.com/50" alt="">
+                <h4>April</h4>
+                <p>lorem ipsum dolor sit amet qur lim son</p>
+            </div>
+            <div class="bottom-box">
+                <p style="font-size: 30px; color: white; background:rgb(0, 183, 255); padding: 10px">Testimonials</p>
+                <p style="padding: 15px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum beatae animi quidem repellendus atque laborum, placeat, totam quibusdam vero eius alias, tempora asperiores obcaecati possimus magni at omnis vitae provident!</p>
+            </div>
+        </div>
+        <div class="box-11">
+            <h4>Our Campaigns</h4>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+        </div>
+        <div class="box-12"> <br>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+        </div>
+        <div class="box-13"> <br>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+            <br/>
+            <img src="https://via.placeholder.com/150" alt="Games">
+        </div>
+        <div class="box-14"></div>
+    </div>
+    <div class="container-4">
+        <div class="box-16"></div>
+        <div class="box-17">
+            <form action="get">
+                <h4>Stay Informed!</h4> <br>
+                <p><i>subscribe to our newsletter</i></p>
+                <br/>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail"> <br> <br>
+                <input type="button" id="button-3" value="Submit">
+            </form>
+        </div>
+        <div class="box-18">
+            <h4>Stay connected</h4>
+            <p> <i>Follow us on social media accounts</i> </p>
+            <p style="color: rgb(126, 126, 126) ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, voluptatem? doloremque, nam totam, quo, modi molestias enim. Totam natus et, at sed molestiae similique!</p>
+            <section>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </section>
+        </div>
+        <div class="box-19"></div>
+    </div>
+    <div class="container-5">
+        <div class="box-20"></div>
+        <div class="box-21"> 2019 13dev with <i class="fas fa-heart"></i> </div>
+        <div class="box-22"> <i class="fas fa-arrow-up"></i></div>
+        <div class="box-23"></div>
+    </div>
 </body>
+
+</html>

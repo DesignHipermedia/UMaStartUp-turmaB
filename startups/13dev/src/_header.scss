@@ -1,7 +1,11 @@
-header {
-  background: yellow;
-  height: 10vh;
+.nav-container {
+  margin-right: 260px;
+  display:flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
 }
-header {
-  padding: 1em;
+
+.nav-item{
+  padding: 0 8px;
 }
