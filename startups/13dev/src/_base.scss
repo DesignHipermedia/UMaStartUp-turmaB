@@ -124,7 +124,7 @@ h4 {
 }
 
 @include select('disk', '\f0a0');
-@include select('system', '\f0a0');
+@include select('system', '\f0c2');
 @include highlight('database');
 @include highlight('config');
 @include highlight('support');

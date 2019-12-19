@@ -52,7 +52,7 @@ $sides: (top, bottom, left, right);
     &--content {
       &--icon {
         opacity: .3;
-        font-size: 140px;
+        font-size: 120px;
         text-align: center;
         margin-bottom: 20px;
       }
@@ -89,7 +89,7 @@ $sides: (top, bottom, left, right);
     color: $grey;
     height: 60px;
     font-weight: 700;
-    padding-left: 30px;
+    padding-left: 35px;
     width: 300px;
 
     &:hover {
@@ -99,7 +99,7 @@ $sides: (top, bottom, left, right);
 
       &:before {
         content: $icon;
-        font-family: $font-stack, 'FontAwesome';
+        font-family: 'Font Awesome 5 Free';
         color: $grey;
         position: absolute;
         left: 4px;
@@ -108,11 +108,14 @@ $sides: (top, bottom, left, right);
         width: 10%;
         pointer-events: none;
         font-size: 22px;
+        text-decoration: inherit;
+        font-style: normal;
+        font-weight: 900;
       }
 
       &:after {
-        content:"\f078";
-        font-family: $font-stack, 'FontAwesome';
+        content:"\f107";
+        font-family: 'Font Awesome 5 Free';
         color: #fff;
         position: absolute;
         right: 0;
@@ -124,6 +127,9 @@ $sides: (top, bottom, left, right);
         font-size: 22px;
         background-color: $red;
         padding: 18px 0;
+        text-decoration: inherit;
+        font-style: normal;
+        font-weight: 900;
       }
 
       overflow: hidden;
