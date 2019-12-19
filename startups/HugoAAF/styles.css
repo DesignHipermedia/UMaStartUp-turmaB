@@ -1,0 +1,10 @@
+.img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+.container{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 250px;
+}
