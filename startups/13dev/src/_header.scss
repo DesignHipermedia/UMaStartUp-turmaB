@@ -15,7 +15,9 @@ nav .row {
   background-color: $dark-red;
   color: white;
   margin: 0 10px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
 
   &:hover {
     cursor: pointer;
