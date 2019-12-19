@@ -1,5 +1,32 @@
-$primary-color: #512c62;
-$font-stack: "Roboto", Geneva, Verdana, sans-serif;
+$red: #FF1820;
+$dark-red: #9C1A26;
+
+$dark-grey: #222222;
+$grey: #898989;
+
+$width-container: 70vw;
+$font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 300;
+}
 
 * {
   padding: 0;
@@ -10,171 +37,94 @@ $font-stack: "Roboto", Geneva, Verdana, sans-serif;
   font-family: $font-stack;
 }
 
+.ai-normal {
+  @include align-items(normal !important);
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.row {
+  width: $width-container;
+}
+
+.flex-item {
+  background-color: tomato;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+
 .d-flex {
   @include flexbox;
 }
 
-.container-flex {
-  @include flexbox;
-  @include align-items(center);
+.slideshow {
+  min-height: 600px;
+  background-color: $dark-grey;
+  position: relative;
+
+  &-image {
+    background-repeat: repeat-x;
+    background-image: url("../img/slideshow-bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  &-wrapper {
+    position: relative;
+    background-color: transparentize(darken($dark-grey, 40%), .5);
+    border-radius: 10px;
+    margin: 70px 0;
+    @include flex-flow(column);
+    @include align-items(center);
+    @include justify-content(center);
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  &-image1 {
+
+    img {
+      width: 300px;
+      -webkit-filter: drop-shadow(0px 4px 0px $grey);
+      filter: drop-shadow(0px 4px 0px $grey);
+    }
+  }
+
 }
 
-
-.box-1 {
-  @include flex(1);
+.highlights {
+  background-color: $red;
+  color: #fff;
+  &-rows {
+    @include justify-content(space-between);
+    @include flex-wrap(wrap-reverse);
+    @include flexbox;
+    @include align-items(flex-end);
+    @include align-content(center);
+    height: auto;
+  }
 }
 
-.box-2 {
-  @include flex(2);
-  direction: ltr;
-}
-
-#logo {
-  color: red;
-}
-
-.box-3 {
-  @include flex(2);
-  direction: rtl;
-
-}
-
-.box-4 {
-  @include flex(1);
-}
-
-ul li a {
-  text-decoration: none;
-  color: rgba(0,0,0,0.8);
-}
-
-
-//.image .content {
-//  position: absolute;
-//  background: rgba(0, 0, 0, 0.7);
-//  color: #f1f1f1;
-//  width: 330px;
-//  padding: 20px;
-//  bottom: 60px;
-//  right: 0;
-//}
-.container-2{
-  @include flexbox;
-}
-.box-start , .box-end{
-  @include flex(1);
-}
-.box-6 , .box-7{
-  @include flex(2);
-  padding: 5px;
-}
-
-.container-3{
-  @include flexbox;
-}
-
-.box-9 , .box-14{
-  @include flex(2);
-}
-
-.box-10 , .box-11 , .box-12 , .box-13{
-  @include flex(2);
-}
-
-.box-11 , .box-12 , .box-13{
-  align-content: flex-end;
-  text-align: right;
-}
-
-.box-10{
-  flex-direction: column;
-  text-align: center;
-}
-
-.row {
-  @include flex-direction(row);
-}
-
-.bottom-box{
-  background:#CCCCCC;
-}
-
-.container-4 {
-  @include flexbox;
-  padding-top: 50px;
-  height: 200px;
-}
-.box-17 , .box-18{
-  flex: 2;
-  background:#CCCCCC;
-  padding: 10px;
-}
-.box-16 , .box-19{
-  flex: 1;
-  background:#CCCCCC;
-}
-
-#email {
-  padding: 6px;
-  width: 50%;
-}
-
-section{
-  color: white;
-  margin-top: 20px;
-}
-
-section > i {
-  background: rgb(0, 183, 255);
-  margin: 5px;
-  padding: 10px;
-  font-size: 20px;
-  height: 20px;
-  width: 20px;
-}
-
-.container-5 {
-  @include flexbox;
-  margin-top: 20px;
-}
-
-.box-20, .box-23 {
-  @include flex(1);
-}
-
-.box-21, .box-22 {
-  @include flex(2);
-}
-.box-21 {
-  padding: 15px;
-  color: rgb(126, 126, 126);
-}
-
-.box-22 > i {
-  align-content: right;
-  background: rgb(0, 183, 255);
-  margin: 5px;
-  padding: 10px;
-  font-size: 20px;
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  right: 265px;
-}
-
-.slide {
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.legend-slide {
-  position: absolute;
-  right: 317px;
-  bottom: 100px;
-  background-color: #0845b98f;
-  padding: 20px;
-}
-
-.menu {
-  @include justify-content(end);
-}
+@include select('disk', '\f0a0');
+@include select('system', '\f0a0');
+@include highlight('database');
+@include highlight('config');
+@include highlight('support');
