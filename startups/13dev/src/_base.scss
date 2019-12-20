@@ -1,113 +1,130 @@
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
-$sides: (top, bottom, left, right);
+$red: #FF1820;
+$dark-red: #9C1A26;
 
+$dark-grey: #222222;
+$grey: #898989;
 
+$width-container: 70vw;
+$font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-@each $space in $spaceamounts {
-  @each $side in $sides {
-    .m-#{str-slice($side, 0, 1)}-#{$space} {
-      margin-#{$side}: #{$space}px !important;
+h1,h2,h3,h4,h5,h6 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin:0;
+}
+
+*, body {
+  font-family: $font-stack;
+}
+
+.ai-normal {
+  @include align-items(normal !important);
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.row {
+  width: $width-container;
+}
+
+.flex-item {
+  background-color: tomato;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+
+.d-flex {
+  @include flexbox;
+}
+
+.slideshow {
+  min-height: 600px;
+  background-color: $dark-grey;
+  position: relative;
+
+  &-image {
+    background-repeat: repeat-x;
+    background-image: url("../img/slideshow-bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  &-wrapper {
+    position: relative;
+    background-color: transparentize(darken($dark-grey, 40%), .2);
+    border-radius: 5px;
+    margin: 70px 0;
+    @include flex-flow(column);
+    @include align-items(center);
+    @include justify-content(center);
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  &-image1 {
+
+    img {
+      width: 300px;
+      -webkit-filter: drop-shadow(0px 4px 0px $grey);
+      filter: drop-shadow(0px 4px 0px $grey);
     }
+  }
 
-    .p-#{str-slice($side, 0, 1)}-#{$space} {
-      padding-#{$side}: #{$space}px !important;
-    }
+}
+
+.highlights {
+  background-color: $red;
+  color: #fff;
+  &-rows {
+    @include justify-content(space-between);
+    @include flex-wrap(wrap-reverse);
+    @include flexbox;
+    @include align-items(flex-end);
+    @include align-content(center);
+    height: auto;
   }
 }
 
-//flexbox
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-// number, initial, auto, or none
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -webkit-flex: $values;
-  -ms-flex: $values;
-  flex: $values;
-}
-
-// row, row-reverse, column, column-reverse
-@mixin flex-direction($direction) {
-  -webkit-flex-direction: $direction;
-  -moz-flex-direction: $direction;
-  -ms-flex-direction: $direction;
-  flex-direction: $direction;
-}
-
-// nowrap, wrap, wrap-reverse
-@mixin flex-wrap($wrap) {
-  -webkit-flex-wrap: $wrap;
-  -moz-flex-wrap: $wrap;
-  -ms-flex-wrap: $wrap;
-  flex-wrap: $wrap;
-}
-
-//flex-direction, flex-wrap
-@mixin flex-flow($flow) {
-  -webkit-flex-flow: $flow;
-  -moz-flex-flow: $flow;
-  -ms-flex-flow: $flow;
-  flex-flow: $flow;
-}
-
-// order
-@mixin order($val) {
-  -webkit-box-ordinal-group: $val;
-  -moz-box-ordinal-group: $val;
-  -ms-flex-order: $val;
-  -webkit-order: $val;
-  order: $val;
-}
-
-// Flex grow factor
-// - applies to: flex items
-// <number>
-@mixin flex-grow($grow) {
-  -webkit-flex-grow: $grow;
-  -moz-flex-grow: $grow;
-  -ms-flex-grow: $grow;
-  flex-grow: $grow;
-}
-
-
-// flex-start, flex-end, center, space-between, space-around 
-@mixin justify-content($justify) {
-  -webkit-justify-content: $justify;
-  -moz-justify-content: $justify;
-  -ms-justify-content: $justify;
-  justify-content: $justify;
-  -ms-flex-pack: $justify;
-}
-
-// flex-start, flex-end, center, space-between, space-around, stretch 
-@mixin align-content($align) {
-  -webkit-align-content: $align;
-  -moz-align-content: $align;
-  -ms-align-content: $align;
-  align-content: $align;
-}
-
-
-// flex-start, flex-end, center, baseline, stretch 
-@mixin align-items($align) {
-  -webkit-align-items: $align;
-  -moz-align-items: $align;
-  -ms-align-items: $align;
-  -ms-flex-align: $align;
-  align-items: $align;
-}
-
-// auto, flex-start, flex-end, center, baseline, stretch 
-@mixin align-self($align) {
-  -webkit-align-self: $align;
-  -moz-align-self: $align;
-  -ms-align-self: $align;
-  align-self: $align;
-}
+@include select('disk', '\f0a0');
+@include select('system', '\f0c2');
+@include highlight('database');
+@include highlight('config');
+@include highlight('support');

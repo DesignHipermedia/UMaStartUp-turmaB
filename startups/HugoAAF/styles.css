@@ -1,0 +1,15 @@
+.titulo h1{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+a{
+    color: transparent;
+}
+body{
+    background-image: url(sprites/background3.jpg);
+    object-fit: cover;
+    background-size: cover;
+}
