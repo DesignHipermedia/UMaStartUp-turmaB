@@ -1,15 +1,41 @@
 .titulo h1{
     display: inline-block;
-    padding: 0 20px 0 20px;
+    padding: 0 70px 0 70px;
     text-align: center;
     color: white;
-    background: black;
+    font-size: 60px;
+    font-family: 'Chela One', cursive;
 }
 a{
     color: transparent;
 }
 body{
-    background-image: url(sprites/background3.jpg);
+    background-image: url(sprites/background5.jpg);
     object-fit: cover;
     background-size: cover;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+}
+.boxpc img{
+    width: 500px;
+    height: 500px;
+    object-fit:cover;
+    
+}
+.welcome{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-family: 'Chela One', cursive;
+    padding: 50px 0 0 0;
+}
+.informacaopc ul{
+    position: absolute;
+    margin-top: -400px;
+    color: white;
 }
