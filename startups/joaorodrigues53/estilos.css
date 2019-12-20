@@ -18,7 +18,11 @@ body{
     font-weight: .5;
 
 }
-
+.active{
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 a:hover{
 
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
@@ -66,10 +70,8 @@ a:hover{
     position: absolute;
     align-content: center;
     font-family: 'Josefin Slab', serif;
-    background: -webkit-linear-gradient(#66ff66, #ffcc00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 50%;
+    color: #fff;
+    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -79,24 +81,7 @@ a:hover{
     animation-delay: .5s;
 
 }
-.welcome2{
-    opacity: 0;
-    font-size: 50px;
-    position: absolute;
-    align-content: center;
-    font-family: 'Josefin Slab', serif;
-    background: -webkit-linear-gradient(#66ff66, #ffcc00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    animation: fadein 4s forwards;
-    animation-delay: .5s;
-}
+
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -109,9 +94,11 @@ a:hover{
 footer{
     width: 100%;
     height: 300px;
+    margin-top: 50px;
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
-    margin-top: -20px;
+    border-top: 3px solid #99ff66;
+
 
 }
 .rodape{
@@ -126,11 +113,12 @@ footer{
 .corpo{
     position: relative;
     width: 100%;
-    height: 700px;
+    
     display: flex;
-    border-bottom: 3px solid #99ff66;
+    flex-wrap: wrap;
+
     margin-top: -5px;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px 0;
     font-family: 'Josefin Slab', serif;
 
@@ -143,7 +131,7 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Rock Salt', cursive;
     animation: fadein 4s forwards;
     animation-delay: .5s;
 }
@@ -151,7 +139,8 @@ footer{
     position: relative;
     width: 380px;
     height: 500px;
-    margin: 20px 0;
+    margin: 20px;
+    margin-bottom: 50px;
     box-sizing: border-box;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
     overflow: hidden;
@@ -235,4 +224,19 @@ footer{
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.7s;
+}
+.rodape2{
+    margin-top: 60px;
+    padding: 0 10px;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}
+.social-media a{
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+
 }
