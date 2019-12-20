@@ -1,0 +1,28 @@
+/////CORES E TAL
+
+
+///// NAVBAR////
+nav {
+  background:black;    
+}
+a {
+  color: white;  
+}
+
+.button a {  
+  background: teal;
+  border: 1px #006d6d solid;
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+.button:not(.secondary) a:hover {
+  background: #006d6d;
+  border-color: #005959;
+}
+
+.button.secondary a:hover {
+  color: #ddd;
+}
