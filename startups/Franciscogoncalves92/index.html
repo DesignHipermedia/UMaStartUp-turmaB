@@ -7,9 +7,12 @@
     <title>Agência de Viagens</title>
 </head>
 <body>
-    <div class="box1">
-        <img src="logo.jpg">
-        <div class="titulo">Agência de Viagens</div>
+    <div class="banner">
+        <div class="box1">
+            <img src="logo.jpg">
+            <div class="titulo"><h2>Agência de Viagens</h2></div> 
+        </div><img src="logotop.jpg" width="700" height="200">
+        <div></div>
     </div>
     <nav class="nav" >
     <button class="botao" id="botao1">Destinos</button>
@@ -17,13 +20,26 @@
     <button class="botao" id="botao3">Preços</button>
     <button class="botao" id="botao4">Apoio</button>
     </nav>
+
 </body>
 <style>
+    body{
+        background-color: burlywood;
+    }
     .titulo{
         display: flex;
-        justify-content: center;
+        justify-content: right;
         white-space: nowrap;
         text-align: center;
+        width: 100px;
+      
+        
+    }
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
     }
     .box1{
         display: flex;
@@ -32,22 +48,27 @@
         height: 100px;
         margin: 10px;
         margin-left: 150px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .nav{
         display:flex;
         justify-content: center;
+        margin: 10px;
+        font-size: 200px;
 
     }
     .botao{
         position: absolute;
         width: 250px;
-        height: 10px;
+        height: 100px;
         margin: 20px;
         background-color: transparent;
         border: none;
         color: black;
         cursor: pointer;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 100px;
     }
     #botao4{
         position: relative;
@@ -157,5 +178,6 @@
     #botao1:hover::after{
         width: 100%;
     }
+
 </style>
 </html>
