@@ -22,12 +22,10 @@ body{
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
-    font-family: 'Josefin Slab', serif;
-    font-weight: .5;
-    letter-spacing: 2px;
-
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 .active{
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
     -webkit-background-clip: text;
@@ -45,8 +43,12 @@ a:hover{
     transition:.5s;
 
 }
-
+.link{
+  font-weight: 100;
+}
 .musica{
+    display: flex;
+    justify-content: center;
     border-bottom: 1.5px solid #99ff66;
     text-align: center;
     top: 0;
@@ -56,25 +58,30 @@ a:hover{
     background-image: linear-gradient(to right, #2457d7, #3b125d);
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
+    font-weight: initial;
           
 }
-
 .titulo{
+    display: flex;
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
     margin-top: 30px;
     position: absolute;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
 
+.negrito{
+  font-weight: bold;
 }
 .deconstructed {
   position: absolute;
   margin: auto;
 
   color: transparent;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -180,7 +187,7 @@ a:hover{
     font-size: 50px;
     position: absolute;
     align-content: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: #fff;
     height: 30%;
     width: 100%;
@@ -218,8 +225,9 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     left: 42%;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
+    font-weight: 100;
 }
 .corpo{
     position: relative;
@@ -228,7 +236,7 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     margin: 40px 0;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
 
 }
 .titulocorpo{
@@ -239,7 +247,7 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     animation: fadein 4s forwards;
     animation-delay: .5s;
     text-shadow: 2px 2px 8px #3b125d;
@@ -341,7 +349,7 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .social-media a{
     padding: 0 10px;
