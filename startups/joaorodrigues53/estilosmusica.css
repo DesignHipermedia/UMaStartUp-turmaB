@@ -6,7 +6,7 @@ body{
 }
 .imagem{
     background-image: url('musicas.jpg');
-    height: 649px;
+    height: 500px;
     width: 100%;
     display:flex;
     justify-content: center;
