@@ -21,12 +21,6 @@ body{
     grid-column-gap: 25px;
     grid-row-gap: 50px;
 }
-.boxpc img{
-    width: 500px;
-    height: 500px;
-    object-fit:cover;
-    
-}
 .welcome{
     text-align: center;
     color: white;
@@ -34,8 +28,31 @@ body{
     font-family: 'Chela One', cursive;
     padding: 50px 0 0 0;
 }
-.informacaopc ul{
-    position: absolute;
-    margin-top: -400px;
-    color: white;
+.informacaopc{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    padding-top: 50px;
+    padding-bottom:50px ;
+}
+.informacaopc img{
+    width: inherit;
+    height: 500px;
+}
+.container {
+    margin: 5px;
+    width: inherit;
+    height: max-content;
+    border: 2px solid #341C09;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto;
+  }
+.item {
+    width: 250px;
+    height: 250px;
+    flex: 0 0 auto;
 }
