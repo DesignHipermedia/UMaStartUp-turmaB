@@ -1,0 +1,16 @@
+.highlights {
+  background-color: $red;
+  color: #fff;
+  &-rows {
+    @include justify-content(space-between);
+    @include flex-wrap(wrap-reverse);
+    @include flexbox;
+    @include align-items(flex-end);
+    @include align-content(center);
+    height: auto;
+  }
+}
+
+@include highlight('database');
+@include highlight('config');
+@include highlight('support');
