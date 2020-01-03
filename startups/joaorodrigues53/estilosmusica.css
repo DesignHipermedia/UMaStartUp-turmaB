@@ -123,3 +123,13 @@ footer{
     text-align: center;
 
 }
+.corpo{
+    position: relative;
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
