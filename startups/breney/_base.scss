@@ -47,3 +47,18 @@
    h1{
        font-weight: 900;
    }
+   .tabelinha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex: 1;
+   }
+   .contentt {
+     width:33.33%;
+     margin-bottom:10px;
+   }
+   
+   .imagens {
+     width: 300px;
+   }
