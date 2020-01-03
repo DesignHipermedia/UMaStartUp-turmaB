@@ -4,21 +4,33 @@ body{
     margin: 0;
 
 }
-
+.imagem{
+    background-image: url('index.jpg');
+    height: 649px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #99ff66;
+}
 .musica a{
 
     margin: 0 45px;
+
     display: inline-block;
     padding: 20px;
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
-    font-family: 'Josefin Slab', serif;
-    font-weight: .5;
-
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+.active{
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 a:hover{
 
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
@@ -31,8 +43,12 @@ a:hover{
     transition:.5s;
 
 }
-
+.link{
+  font-weight: 100;
+}
 .musica{
+    display: flex;
+    justify-content: center;
     border-bottom: 1.5px solid #99ff66;
     text-align: center;
     top: 0;
@@ -42,53 +58,138 @@ a:hover{
     background-image: linear-gradient(to right, #2457d7, #3b125d);
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
+    font-weight: initial;
           
 }
-.img{
-    width: 100%;
-    border-bottom: 3px solid #99ff66;
-}
 .titulo{
+    display: flex;
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 100px;
     margin-top: 30px;
     position: absolute;
-    font-family: 'Josefin Slab', serif;
-
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
 }
 
-.welcome{
-
-    opacity: 0;
-    font-size: 100px;
-    position: absolute;
-    align-content: center;
-    font-family: 'Josefin Slab', serif;
-    background: -webkit-linear-gradient(#66ff66, #ffcc00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    animation: fadein 4s forwards;
-    animation-delay: .5s;
-
+.negrito{
+  font-weight: bold;
 }
-.welcome2{
+.deconstructed {
+  position: absolute;
+  margin: auto;
+
+  color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+}
+
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  pointer-events: none;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+}
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-250%);
+  }
+}
+/* .welcome{
+
     opacity: 0;
     font-size: 50px;
     position: absolute;
     align-content: center;
-    font-family: 'Josefin Slab', serif;
-    background: -webkit-linear-gradient(#66ff66, #ffcc00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -96,7 +197,9 @@ a:hover{
     text-align: center;
     animation: fadein 4s forwards;
     animation-delay: .5s;
-}
+
+} */
+
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -109,9 +212,11 @@ a:hover{
 footer{
     width: 100%;
     height: 300px;
+    margin-top: 50px;
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
-    margin-top: -20px;
+    border-top: 3px solid #99ff66;
+
 
 }
 .rodape{
@@ -120,38 +225,39 @@ footer{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     left: 42%;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
+    font-weight: 100;
 }
 .corpo{
     position: relative;
-    width: 100%;
-    height: 700px;
+    width: 100%;  
     display: flex;
-    border-bottom: 3px solid #99ff66;
-    margin-top: -5px;
-    justify-content: space-around;
-    margin: 20px 0;
-    font-family: 'Josefin Slab', serif;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+    font-family: 'Josefin Sans', sans-serif;
 
 }
 .titulocorpo{
     margin: 0;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 50px;
     background: -webkit-linear-gradient(#2457d7, #3b125d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Sans', sans-serif;
     animation: fadein 4s forwards;
     animation-delay: .5s;
+    text-shadow: 2px 2px 8px #3b125d;
 }
 .corpo .box{
     position: relative;
     width: 380px;
     height: 500px;
-    margin: 20px 0;
+    margin: 20px;
+    margin-bottom: 50px;
     box-sizing: border-box;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
     overflow: hidden;
@@ -235,4 +341,19 @@ footer{
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.7s;
+}
+.rodape2{
+    margin-top: 60px;
+    padding: 0 10px;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.social-media a{
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+
 }

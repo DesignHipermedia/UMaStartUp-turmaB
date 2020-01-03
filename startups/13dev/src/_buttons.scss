@@ -1,0 +1,18 @@
+.btn-primary {
+  color: #fff;
+  background-color: $red;
+  border-bottom: 4px solid $dark-red;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  width: auto;
+  height: 60px;
+
+  &:hover {
+    opacity: 0.9;
+    background-color: darken($red, 20%);
+    transition: .2s;
+  }
+
+  @include justify-content(center);
+}

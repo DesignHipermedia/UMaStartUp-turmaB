@@ -4,34 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A vida</title>
+    <title>Doçaria.micas</title>
+    <style>
+        html{
+            background: #F0C968;
+        }
+        body{
+            margin: 20px;
+        }
+        #menu ul{
+            font-size: x-large;
+            margin: 20px;
+            list-style: none;
+        }
+        #menu ul li{
+            display: inline;
+        }
+        #menu ul li a{
+            padding: 20px 30px;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        }
+        #menu ul li a:hover{
+            color: rgb(255, 255, 255);
+        }
+        .cards1{
+            padding: 50px 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        .cards2{
+            display: inline-flex;
+            padding: 50px 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px;
+        }
+        .cards3{
+            padding: 50px 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bt{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            border-bottom: black;
+            cursor: pointer;
+            background:none;
+            color: #6B3412;
+            font-weight: 900;
+            margin: 150px;
+        }
+        
+    </style>
 </head>
+
 <body>
+    <div id="menu" align="center">
+    <header>
+        <ul>
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="receitas.html" class="nav-link">Nossas Receitas</a>
+            </li>
+            <li class="nav-item">
+                <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+            <li>
+            <li class="nav-item pr-3">
+                <a href="contactos.html" class="nav-link">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    </div>
     <div class="cards1">
-        <div class="imgBx">
-            <img src="projeto-1.jpg">
+        <div class="imgBx1">
+            <img src="immagine_header_4.jpg" width="600" height="400" align="right">
         </div>
-        <div class="content">
-            <h2>Petit</h2>
-            <p>Movie time</p>
+        <div class="content" align="center">
+            <h1>As nossas receitas</h1>
+            <p>Aqui vamos mostrar vos algumas receitas dos bolos mais conhecidos.</p>
+    <button class="bt" type="button">Nossas Receitas</button>
         </div>
     </div>
-    <style>
-        .cards1{
-            position: absolute;
-            width: 1000px;
-            height: 1000px;
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .imgBx{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 150%;
-            height: 150%;
-        }
-    </style>
+    <div class="cards2">
+        <div class="imgBx2">
+            <img src="download.jpg" width="600" height="400" align="left">
+        </div>
+        <div class="content" align="center">
+            <h1>Quem somos</h1>
+            <p>Nos somos uma empresa que ajudamos as pessoas que querem saber mais sobre a cozinha e a padaria/pastelaria.</p>
+    <button class="bt" type="button">Quem somos</button>
+        </div>
+    </div>
+    <div class="cards3">
+        <div class="imgBx1">
+            <img src="mapa_contactos_exs.png" width="600" height="400" align="right">
+        </div>
+        <div class="content" align="center">
+            <h1>Contacto</h1>
+            <p>Fazemos encomendas e pode contectar connosco aqui</p>
+    <button class="bt" type="button">Contacto</button>
+        </div>
+    </div>
 </body>
 </html>
