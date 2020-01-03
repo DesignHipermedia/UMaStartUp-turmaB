@@ -1,0 +1,69 @@
+.prices {
+  background-color: #fff;
+  position: relative;
+  min-height: 600px;
+
+  &-rows {
+    @include justify-content(space-between);
+    @include flex-wrap(wrap-reverse);
+    @include flexbox;
+    @include align-items(flex-end);
+    @include align-content(center);
+    height: auto;
+    z-index: 2;
+  }
+
+  &-image {
+    background-repeat: repeat-x;
+    background-image: url("../img/prices-bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-position: center;
+    background-size: 50%;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    background-color: #fff;
+  }
+
+  &--table {
+
+    // items
+    & > div {
+      flex: 1 1 auto;
+      margin: 6px;
+    }
+
+    &:after {
+      display: block;
+      margin: 6px;
+      flex: 999 999 auto;
+    }
+
+  }
+
+  &--container {
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    @include flexbox;
+    @include align-items(stretch);
+    @include align-content(stretch);
+  }
+
+  &--content {
+    background-color: $yellow;
+    color: #fff;
+    border-bottom: 4px solid $dark-yellow;
+
+    @include justify-content(space-between);
+    @include flex-wrap(wrap-reverse);
+    @include flexbox;
+    @include align-items(flex-end);
+    @include align-content(center);
+    height: auto;
+
+    }
+}
