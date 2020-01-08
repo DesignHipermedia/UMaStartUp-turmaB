@@ -1,7 +1,10 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.comida {
+    margin-top: 100px;
+    text-align: center;
+}
 .comida h1 {
     color: #fff;
     text-align: center;
@@ -22,12 +25,6 @@
     transform: scale(1, 1.5) translateY(-5px);
     cursor: pointer;
 }
-
-.comida {
-    margin-top: 100px;
-    text-align: center;
-}
-
 .bem {
     color: yellow;
     text-align: center;
@@ -326,15 +323,17 @@ footer {
     height: 300px;
     margin: 100px 0 0 60px;
     margin-bottom: 80px;
+
 }
 
 .conteudo {
     position: absolute;
+    
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 1s;
     transform-style: preserve-3d;
+        border-radius: 30px;
 }
 
 .cartao:hover .conteudo {
@@ -346,17 +345,37 @@ footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: white;
     line-height: 300px;
     color: #03446A;
     text-align: center;
     font-size: 60px;
-    border-radius: 5px;
+    border-radius: 30px;
     backface-visibility: hidden;
 }
 
 .tras {
-    background: #03446A;
+    border: solid orange 3px;
     color: white;
     transform: rotateY( 180deg);
+}
+.imagem{
+    width: 280px;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.imagem2{
+    width: 330px;
+    height: 470px;
+    object-fit: cover;
+    margin-top: -65px;
+}
+.texto{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 1px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 40px;
 }

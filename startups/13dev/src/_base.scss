@@ -4,6 +4,9 @@ $dark-red: #9C1A26;
 $dark-grey: #222222;
 $grey: #898989;
 
+$yellow: #FFA401;
+$dark-yellow: #CF8B28;
+
 $width-container: 70vw;
 $font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -50,9 +53,9 @@ h4 {
   @include justify-content(center);
 }
 
-.row {
-  width: $width-container;
-}
+//.row {
+//  width: $width-container;
+//}
 
 .flex-item {
   background-color: tomato;
@@ -68,63 +71,5 @@ h4 {
 .d-flex {
   @include flexbox;
 }
-
-.slideshow {
-  min-height: 600px;
-  background-color: $dark-grey;
-  position: relative;
-
-  &-image {
-    background-repeat: repeat-x;
-    background-image: url("../img/slideshow-bg.png");
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    background-position: center;
-    background-size: 40%;
-  }
-
-  &-wrapper {
-    position: relative;
-    background-color: transparentize(darken($dark-grey, 40%), .2);
-    border-radius: 5px;
-    margin: 70px 0;
-    @include flex-flow(column);
-    @include align-items(center);
-    @include justify-content(center);
-    text-align: center;
-    padding: 50px 0;
-  }
-
-  &-image1 {
-
-    img {
-      width: 300px;
-      -webkit-filter: drop-shadow(0px 4px 0px $grey);
-      filter: drop-shadow(0px 4px 0px $grey);
-    }
-  }
-
-}
-
-.highlights {
-  background-color: $red;
-  color: #fff;
-  &-rows {
-    @include justify-content(space-between);
-    @include flex-wrap(wrap-reverse);
-    @include flexbox;
-    @include align-items(flex-end);
-    @include align-content(center);
-    height: auto;
-  }
-}
-
 @include select('disk', '\f0a0');
 @include select('system', '\f0c2');
-@include highlight('database');
-@include highlight('config');
-@include highlight('support');
