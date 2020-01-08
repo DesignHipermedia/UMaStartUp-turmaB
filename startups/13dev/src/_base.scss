@@ -53,9 +53,9 @@ h4 {
   @include justify-content(center);
 }
 
-.row {
-  width: $width-container;
-}
+//.row {
+//  width: $width-container;
+//}
 
 .flex-item {
   background-color: tomato;
@@ -71,6 +71,5 @@ h4 {
 .d-flex {
   @include flexbox;
 }
-
 @include select('disk', '\f0a0');
 @include select('system', '\f0c2');

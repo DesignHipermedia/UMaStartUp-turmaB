@@ -328,19 +328,23 @@ footer {
 
 .conteudo {
     position: absolute;
-    
     width: 100%;
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
-        border-radius: 30px;
+    border-radius: 30px;
+    
 }
 
 .cartao:hover .conteudo {
     transform: rotateY( 180deg);
     transition: transform 0.5s;
-}
 
+}
+.cartao:hover .conteudo .texto2{
+    animation: animacao 1.2s forwards;
+    animation-delay: 0.2s;
+}
 .frente, .tras {
     position: absolute;
     height: 100%;
@@ -351,10 +355,13 @@ footer {
     font-size: 60px;
     border-radius: 30px;
     backface-visibility: hidden;
+    border-bottom: orange solid 2px;
+    box-shadow: -1px 9px 5px -8px rgba(0,0,0,1);
+    border-radius: 20px;
+    
 }
 
 .tras {
-    border: solid orange 3px;
     color: white;
     transform: rotateY( 180deg);
 }
@@ -362,20 +369,43 @@ footer {
     width: 280px;
     height: 300px;
     border-radius: 30px;
+    margin-top: -20px;
     object-fit: cover;
 }
 .imagem2{
-    width: 330px;
-    height: 470px;
-    object-fit: cover;
-    margin-top: -65px;
+    width: 420px;
+    height: 420px;
+    margin-top: -50px;
+    margin-left: -60px;
+}
+.imagem3{
+    width: 300px;
+    height: 300px;
 }
 .texto{
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
     color: white;
-    text-shadow: 1px 1px brown;
+    text-shadow: 2px 2px brown;
     text-align: center;
     line-height: 1;
     margin-top: 40px;
+}
+.texto2{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 70px;
+}
+.texto3{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 100px;
 }
