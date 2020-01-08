@@ -9,36 +9,39 @@
   padding: 0;
   margin: 0;
 }
-body {
+body{  
   font-family: sans-serif;
 }
 nav {  
   padding: 1px 20px 1px 1px;
 }
-ul {
-  list-style-type: none;
-}
-a {  
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.logo a:hover {
-  text-decoration: none;
-}
-.menu li {
-  font-size: 16px;
-  padding: 15px 5px;
-  white-space: nowrap;
-}
-li.logoimg{
-  padding: 1px 1px;
-}
-.logo a,
-.toggle a {
-  font-size: 20px;
+.menu{
+  ul {
+    list-style-type: none;
+  }
+  a {  
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo a:hover {
+    text-decoration: none;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  li.logoimg{
+    padding: 1px 1px;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  
 }
 
 
@@ -131,6 +134,38 @@ li.logoimg{
   .menu li.button {
       padding-right: 0;
   }
+}
+///////////////// BODY ////////////////
+
+body{
+  background-image: url("imagens/backimg3.jpg"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;  
+  background-size: cover;
+  background-position: top center;
+}
+
+.flex-container {
+  margin-top: 350px;
+  display: flex;
+  justify-content: center;  
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+p{
+  margin-top: 30px;
+  color: white;
 }
 
 

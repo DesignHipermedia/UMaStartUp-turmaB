@@ -24,8 +24,13 @@ a {
   color: #ddd;
 }
 
+body {
+  background-color: black;
+  /* Used if the image is unavailable */
+}
+
 footer {
-  background-color: lightseagreen;
+  background-color: #005959;
 }
 
 /* Basic styling */
@@ -44,34 +49,34 @@ nav {
   padding: 1px 20px 1px 1px;
 }
 
-ul {
+.menu ul {
   list-style-type: none;
 }
 
-a {
+.menu a {
   text-decoration: none;
 }
 
-a:hover {
+.menu a:hover {
   text-decoration: underline;
 }
 
-.logo a:hover {
+.menu .logo a:hover {
   text-decoration: none;
 }
 
-.menu li {
+.menu .menu li {
   font-size: 16px;
   padding: 15px 5px;
   white-space: nowrap;
 }
 
-li.logoimg {
+.menu li.logoimg {
   padding: 1px 1px;
 }
 
-.logo a,
-.toggle a {
+.menu .logo a,
+.menu .toggle a {
   font-size: 20px;
 }
 
@@ -195,6 +200,45 @@ li.logoimg {
   .menu li.button {
     padding-right: 0;
   }
+}
+
+body {
+  background-image: url("imagens/backimg3.jpg");
+  /* The image used */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  background-size: cover;
+  background-position: top center;
+}
+
+.flex-container {
+  margin-top: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+p {
+  margin-top: 30px;
+  color: white;
 }
 
 footer {
