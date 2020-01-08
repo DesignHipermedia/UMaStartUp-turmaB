@@ -65,6 +65,34 @@ h1 {
   font-weight: 900;
 }
 
+.tabelinha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contentt {
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+
+.imagens {
+  width: 300px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
