@@ -1,19 +1,64 @@
+//.prices {
+//  background-color: #fff;
+//  position: relative;
+//  min-height: 600px;
+//
+//  &-rows {
+//    @include justify-content(space-between);
+//    @include flex-wrap(wrap-reverse);
+//    @include flexbox;
+//    @include align-items(flex-end);
+//    @include align-content(center);
+//    height: auto;
+//    z-index: 2;
+//  }
+//
+//  &-image {
+//
+//  }
+//
+//  &--table {
+//
+//    // items
+//    & > div {
+//      flex: 1 1 auto;
+//      margin: 6px;
+//    }
+//
+//    &:after {
+//      display: block;
+//      margin: 6px;
+//      flex: 999 999 auto;
+//    }
+//
+//  }
+//
+//  &--container {
+//    @include justify-content(center);
+//    @include flex-wrap(wrap);
+//    @include flexbox;
+//    @include align-items(stretch);
+//    @include align-content(stretch);
+//  }
+//
+//  &--content {
+//    background-color: $yellow;
+//    color: #fff;
+//    border-bottom: 4px solid $dark-yellow;
+//
+//    @include justify-content(space-between);
+//    @include flex-wrap(wrap-reverse);
+//    @include flexbox;
+//    @include align-items(flex-end);
+//    @include align-content(center);
+//    height: auto;
+//
+//    }
+//}
+
 .prices {
-  background-color: #fff;
-  position: relative;
-  min-height: 600px;
-
-  &-rows {
-    @include justify-content(space-between);
-    @include flex-wrap(wrap-reverse);
-    @include flexbox;
-    @include align-items(flex-end);
-    @include align-content(center);
-    height: auto;
-    z-index: 2;
-  }
-
-  &-image {
+  min-height: 500px;
+  &__background {
     background-repeat: repeat-x;
     background-image: url("../img/prices-bg.png");
     position: absolute;
@@ -28,42 +73,63 @@
     filter: grayscale(100%);
     background-color: #fff;
   }
-
-  &--table {
-
-    // items
-    & > div {
-      flex: 1 1 auto;
-      margin: 6px;
-    }
-
-    &:after {
-      display: block;
-      margin: 6px;
-      flex: 999 999 auto;
-    }
-
-  }
-
-  &--container {
-    @include justify-content(center);
-    @include flex-wrap(wrap);
-    @include flexbox;
-    @include align-items(stretch);
-    @include align-content(stretch);
-  }
-
-  &--content {
+  &__item {
     background-color: $yellow;
     color: #fff;
     border-bottom: 4px solid $dark-yellow;
+  }
 
-    @include justify-content(space-between);
-    @include flex-wrap(wrap-reverse);
-    @include flexbox;
-    @include align-items(flex-end);
-    @include align-content(center);
-    height: auto;
+  &__item--classic {
+    box-shadow: 0 0 15px $dark-yellow;
+  }
 
-    }
+  // each price col
+  & .row > div {
+    padding: 0 20px;
+  }
+
+  //price table
+  &__table {
+    background-color: #fff;
+    color: $black;
+    border: 3px solid $yellow;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 26px;
+    padding: 10px;
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  //every item table prices
+  &__table > div:not(:last-child) {
+    border-bottom: 3px solid $yellow;
+  }
+
+  //every item table prices
+  &__table > div {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 26px;
+  }
+
+  &__price {
+    font-size: 70px!important;
+    font-weight: 700!important;
+    position: relative;
+  }
+
+  &__price > span {
+    font-size: 25px!important;
+    font-weight: 500!important;
+    position: absolute;
+    bottom: 10px;
+  }
 }
+
