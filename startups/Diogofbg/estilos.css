@@ -1,0 +1,411 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.comida {
+    margin-top: 100px;
+    text-align: center;
+}
+.comida h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(206, 89, 55, 1);
+    display: inline-block;
+    padding: 0 40px 0 40px;
+    transition: .5s;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48);
+    transform: scale(1, 1.5) translateY(0);
+}
+
+.comida h1:hover {
+    color: yellow;
+    transition: .5s;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    transform: scale(1, 1.5) translateY(-5px);
+    cursor: pointer;
+}
+.bem {
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px rgba(206, 89, 55, 1);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    margin-top: 150px;
+    animation: anime 7s ease-in-out infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: rotate(8deg);
+    }
+    25% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    75% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+a {
+    color: transparent;
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    margin: 0 25px;
+    margin-top: 60px;
+    border-radius: 30px;
+    border: 4px solid brown;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left: 100px;
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box2 {
+    width: 300px;
+    height: 350px;
+    margin: 0 25px;
+    margin-top: 60px;
+    border-radius: 30px;
+    border: 4px solid brown;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left: 1500px;
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box2:hover {
+    width: 300px;
+    height: 350px;
+    margin: 0 25px;
+    margin-top: 60px;
+    border-radius: 30px;
+    border: 4px solid brown;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left: 1500px;
+    opacity: 1;
+    box-shadow: -1px 7px 104px -4px rgba(0, 0, 0, 0.75);
+}
+
+.box:hover {
+    width: 300px;
+    height: 350px;
+    margin: 0 25px;
+    margin-top: 60px;
+    border-radius: 30px;
+    border: 4px solid brown;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left: 100px;
+    opacity: 1;
+    box-shadow: -1px 7px 104px -4px rgba(0, 0, 0, 0.75);
+}
+
+.box2 .paragrafo {
+    font-size: 28px;
+    font-family: 'Solway', serif;
+    text-align: justify;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.box .paragrafo {
+    font-size: 30px;
+    font-family: 'Solway', serif;
+    text-align: justify;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    text-align: center;
+    color: orange;
+    display: block;
+    margin-top: 500px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+.card {
+    position: relative;
+    top: 300px;
+    left: 370px;
+    width: 500px;
+    height: 450px;
+    margin: -150px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY( 180deg);
+    transition: transform 0.5s;
+}
+
+.front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.back {
+    background: #a6a6a6;
+    color: black;
+    transform: rotateY( 180deg);
+}
+
+.chefe {
+    font-size: 40px;
+    padding: 30px;
+    margin-top: 70px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 3px brown;
+}
+
+.img {
+    width: 500px;
+    height: 450px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.chefe2 {
+    font-size: 45px;
+    padding: 30px;
+    margin-top: 95px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 3px brown;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.card2 {
+    position: relative;
+    top: 300px;
+    left: 450px;
+    width: 500px;
+    height: 450px;
+    margin: -150px;
+}
+
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card2:hover .content2 {
+    transform: rotateY( 180deg);
+    transition: transform 0.5s;
+}
+
+.front2, .back3, .back2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.back2 {
+    background: #004d00;
+    color: black;
+    transform: rotateY( 180deg);
+}
+
+.back3 {
+    background: #e6e6e6;
+    color: black;
+    transform: rotateY( 180deg);
+}
+
+.card3 {
+    position: relative;
+    top: 300px;
+    left: 290px;
+    width: 500px;
+    height: 450px;
+    margin: -150px;
+}
+
+.card3:hover .content2 {
+    transform: rotateY( 180deg);
+    transition: transform 0.5s;
+}
+
+.mac {
+    font-size: 35px;
+    padding: 30px;
+    margin-top: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 1px 3px black;
+}
+
+.burguer {
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-shadow: 1px 3px white;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.cartao {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 100px 0 0 60px;
+    margin-bottom: 80px;
+
+}
+
+.conteudo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    
+}
+
+.cartao:hover .conteudo {
+    transform: rotateY( 180deg);
+    transition: transform 0.5s;
+
+}
+.cartao:hover .conteudo .texto2{
+    animation: animacao 1.2s forwards;
+    animation-delay: 0.2s;
+}
+.frente, .tras {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 300px;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    border-bottom: orange solid 2px;
+    box-shadow: -1px 9px 5px -8px rgba(0,0,0,1);
+    border-radius: 20px;
+    
+}
+
+.tras {
+    color: white;
+    transform: rotateY( 180deg);
+}
+.imagem{
+    width: 280px;
+    height: 300px;
+    border-radius: 30px;
+    margin-top: -20px;
+    object-fit: cover;
+}
+.imagem2{
+    width: 420px;
+    height: 420px;
+    margin-top: -50px;
+    margin-left: -60px;
+}
+.imagem3{
+    width: 300px;
+    height: 300px;
+}
+.texto{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 40px;
+}
+.texto2{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 70px;
+}
+.texto3{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 100px;
+}
