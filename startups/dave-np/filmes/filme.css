@@ -28,18 +28,13 @@ body {
   line-height: 1.6;
 }
 
-/* .container {
-  
-  /* grid-template-rows: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; */
-/* display: grid;
-      grid-template-rows: fr  min-content fr;
-      grid-template-columns: fr; */
-/* } */
+
 
 section{
   display: flex;
   justify-content: center;
   flex-wrap:wrap;
+  
 }
 
 
@@ -99,8 +94,6 @@ section{
 .cards2{
   width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 50px;
   margin: 50px 0;
   z-index:50px;
 }
@@ -258,9 +251,7 @@ section{
   position: relative;
 }
 
-.tam{
-  font-size: 0.5em;
-}
+
 
 a {
   text-decoration: none;
@@ -342,8 +333,6 @@ Cenas:
 -Menu ln 208-210, clica e ao hover abre mais um menu
 -ficha15 botao2 para <a></a>
 -ficha3a searchbar, colocar do lado direito do titulo (fim)
-
--menu :https://www.w3schools.com/howto/howto_js_sidenav.asp (2)| https://www.cssscript.com/sliding-push-navigation-menu-pure-css/ (1)
 
 Pag individual de filme:
 -Img à esquerda, discrição à direita e like botao animação
