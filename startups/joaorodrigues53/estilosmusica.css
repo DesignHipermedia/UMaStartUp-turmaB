@@ -6,7 +6,7 @@ body{
 }
 .imagem{
     background-image: url('musicas.jpg');
-    height: 500px;
+    height: 400px;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -128,7 +128,7 @@ footer{
     margin: 0;
     margin-top: 50px;
     margin-bottom: 70px;
-    font-size: 100px;
+    font-size: 80px;
     background: -webkit-linear-gradient(#2457d7, #3b125d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
