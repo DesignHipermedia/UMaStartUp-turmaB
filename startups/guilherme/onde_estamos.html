@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+
+    <title>WorldBooks - Onde Estamos</title>
+</head>
+
+<body onload="FadeIn()" class="cor-fundo">
+    <div class="border">
+        <header class="nav">
+            <h1 class="texto"><a href="index.html"><span class="cor-texto">World</span>Books</a></h1>
+            <div class="menus">
+                <ul>
+                    <li class="menus-click"><a href="index.html">Início</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="livros.html">Livros</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click ativo"><a href="onde_estamos.html">Onde estamos</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="sobre.html">Sobre WB</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="locais.html">Locais</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="titulo-centro mapa-titulo">
+                <hr class="linha-1">
+                <p class="block">Onde nos encontrar</p>
+                <hr class="linha-2">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="grid-mapa">
+                <div class="frases">
+                    <div class="frase-lavie">
+                        <h1>La Vie Funchal</h1>
+                    </div>
+                </div>
+                <div class="frases">
+                    <div class="frase-forum">
+                        <h1>Fórum Madeira</h1>
+                    </div>
+                </div>
+                <div class="div-mapa-1">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26877.222936032034!2d-16.946166980530396!3d32.64206656873002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc605fd8ae4f618b%3A0x8e81b5f2ec174546!2sLivraria%20Bertrand%20-%20La%20Vie%20Funchal!5e0!3m2!1spt-PT!2spt!4v1576015789312!5m2!1spt-PT!2spt"
+                        width="450" height="450" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <div class="div-mapa-2">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26877.264910456808!2d-16.94616696381483!3d32.64192687951297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc605f89382f96c1%3A0x8757eff0e2b1325c!2sLivraria%20Bertrand!5e0!3m2!1spt-PT!2spt!4v1576015484771!5m2!1spt-PT!2spt"
+                        width="450" height="450" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                <div class="info-lavie">
+                    <p>La Vie Funchal, Loja 117 Rua, Dr.João Brito Câmara 9, 9000-038 Funchal</p>
+                    <p><span>Segunda-feira:</span> 09:00 - 22:00</p>
+                    <p><span>Terça-feira:</span> 09:00 - 22:00</p>
+                    <p><span>Quarta-feira:</span> 09:00 - 22:00</p>
+                    <p><span>Quinta-feira:</span> 09:00 - 22:00</p>
+                    <p><span>Sexta-feira:</span> 09:00 - 22:00</p>
+                    <p><span>Sábado:</span> 09:00 - 22:00</p>
+                    <p><span>Domingo:</span> 09:00 - 22:00</p>
+                </div>
+                <div class="info-forum">
+                    <p>Fórum Madeira, Loja 2.24, 2.25, Estrada Monumental 390, 9004-568 Funchal</p>
+                    <p><span>Segunda-feira:</span> 10:00 - 23:00</p>
+                    <p><span>Terça-feira:</span> 10:00 - 23:00</p>
+                    <p><span>Quarta-feira:</span> 10:00 - 23:00</p>
+                    <p><span>Quinta-feira:</span> 10:00 - 23:00</p>
+                    <p><span>Sexta-feira:</span> 10:00 - 23:00</p>
+                    <p><span>Sábado:</span> 10:00 - 23:00</p>
+                    <p><span>Domingo:</span> 10:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom: 120px;"></div>
+        <footer>
+            <div class="align">
+                <ul style="padding: 0;">
+                    <li class="menus-click-footer">
+                        <a href="#livros.html">Livros</a>
+                    </li>
+                    <li class="menus-click-footer">
+                        <a href="onde_estamos.html">Onde estamos</a>
+                    </li>
+                    <li class="menus-click-footer">
+                        <a href="sobre.html">Sobre WB</a>
+                    </li>
+                    <li class="menus-click-footer">
+                        <a href="locais.html">Locais</a></li>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <p class="copyright">
+                Copyright &copy; WORLDBOOKS
+            </p>
+        </footer>
+    </div>
+</body>
+<script>
+
+    function FadeIn() {
+        var efeito = document.getElementById("fade");
+        efeito.classList.add("FadeIn");
+    }
+
+</script>
+
+</html>
