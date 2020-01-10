@@ -2,6 +2,19 @@
 $spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 75, 100);
 $sides: (top, bottom, left, right);
 
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 48rem;
+
+// Small tablets (portrait view)
+$screen-md-min: 64rem;
+
+// Tablets and small desktops
+$screen-lg-min: 80rem;
+
+// Large tablets and desktops
+$screen-xl-min: 90rem;
+
+
 @each $space in $spaceamounts {
   @each $side in $sides {
     .m-#{str-slice($side, 0, 1)}-#{$space} {
@@ -43,7 +56,33 @@ $sides: (top, bottom, left, right);
 
   }
 }
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
 
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
 
 //@mixin highlight($prefix) {
 //  .highlight-#{$prefix} {
