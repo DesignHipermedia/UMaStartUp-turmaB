@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>WorldBooks</title>
 </head>
-<body>
-    Onde está o Guilhermeasd
+
+<body onload="FadeIn()" class="cor-fundo">
+    <div class="border">
+        <header class="nav">
+            <h1 class="texto"><a href="index.html"><span class="cor-texto">World</span>Books</a></h1>
+            <div class="menus">
+                <ul>
+                    <li class="menus-click ativo"><a href="index.html">Início</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="onde_estamos.html">Onde estamos</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="#">O que fazemos</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="#">Sobre</a></li>
+                    <li class="barra">|</li>
+                    <li class="menus-click"><a href="#">Outro</a></li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <h1 class="titulo">Bem-Vindo</h1>
+            <hr class="divisao">
+            <h2 class="titulo-2">Ao mundo dos livros</h2>
+            <img class="imagem-fundo-1" src="bookshelf.jpeg" alt="Bookshelf">
+        </div>
+        <div class="fundo-preto">
+            <div class="titulo-centro">
+                <hr class="linha-1">
+                <p class="block">os melhores livros</p>
+                <hr class="linha-2">
+            </div>
+            <br>
+            <div class="content paragraph-1">
+                <p>Aqui podemos encontrar os livros mais procurados na atualidade</p>
+            </div>
+            <br>
+            <div class="cards">
+                <div class="box">
+                    <div class="sobre-img">
+                        <div class="texto-sobre-img">
+                            <h3>Imortal</h3>
+                            <p>de José Rodrigues dos Santos</p>
+                            <p>Editor: Gradiva</p>
+                            <p>Edição ou reimpressão: outubro de 2019</p>
+                        </div>
+                    </div>
+                    <img class="books-img" src="book-1.jpeg" alt="">
+                </div>
+                <div class="box">
+                    <div class="sobre-img">
+                        <div class="texto-sobre-img">
+                            <h3>Longa pétala de mar</h3>
+                            <p>de Isabel Allende</p>
+                            <p>Editor: Porto Editora</p>
+                            <p>Edição ou reimpressão: outubro de 2019</p>
+                        </div>
+                    </div>
+                    <img class="books-img" src="book-2.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="sobre-img">
+                        <div class="texto-sobre-img">
+                            <h3>Uma Beleza que nos Pertence</h3>
+                            <p>de José Tolentino Mendonça </p>
+                            <p>Editor: Quetzal Editores</p>
+                            <p>Edição ou reimpressão: outubro de 2019</p>
+                        </div>
+                    </div>
+                    <img class="books-img" src="book-3.jpg" alt="">
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+        <div>
+            <div class="fundo-branco">
+                <h1>Continua a investigar o nosso site e fica a saber mais...</h1>
+            </div>
+        </div>
+        <!-- <div>
+            <div class="placa"></div>
+            <div class="poste-1"></div>
+            <div class="poste-2"></div>
+        </div> -->
+        <footer>
+            <div class="align">
+                <ul>
+                    <li class="menus-click-footer"><a href="onde_estamos.html">Onde estamos</a></li>
+                    <li class="menus-click-footer"><a href="#">O que fazemos</a></li>
+                    <li class="menus-click-footer"><a href="#">Sobre</a></li>
+                    <li class="menus-click-footer"><a href="#">Outro</a></li>
+                </ul>
+                <br>
+            </div>
+            <p class="copyright">
+                Copyright &copy; WORLDBOOKS
+            </p>
+        </footer>
+    </div>
 </body>
+<script>
+
+    function FadeIn() {
+        var efeito = document.getElementById("fade");
+        efeito.classList.add("FadeIn");
+    }
+
+</script>
+
 </html>
