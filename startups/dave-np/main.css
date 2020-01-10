@@ -247,19 +247,30 @@ section{
 
 
 /* --------------- Menu --------------- https://jsfiddle.net/os74zscd/3/ */
-.sidebar {
+.page-content {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  margin: 0 auto;
+  }
+
+
+.titulo {
   padding: 4rem;
   font-size: 4rem;
   color: #fff;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  z-index:200;
+  z-index:0;
   position: relative;
 }
 
-.tam{
-  font-size: 0.5em;
+.menu_botao:hover{
+  color: #101d2c;
+  transition: 1s;
+  cursor: pointer;
 }
 
 a {
@@ -272,49 +283,44 @@ a:hover {
   cursor: pointer;
 }
 
-li {
-	color: #fff;
-	display: block;
-	float: left;
-	padding: 1rem;
-	position: relative;
-	text-decoration: none;
-  transition-duration: 0.5s;
-}
-  
-li a {
-  color: #fff;
-}
-
-li:hover {
-	color: #3c526bc5;
-}
-
-ul li ul {
-	visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-	position: absolute;
+.sidebar {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin-top: 1rem;
-	left: 0;
-  display: none;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: -190px;
+  width: 150px;
+  padding: 30px;
   font-size: 0.5em;
-}
+  background: #333;
+  color: white;
+  z-index: 200; }
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    text-transform: uppercase;
+    opacity: .5;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .sidebar li:hover {
+      opacity: 1;
+      color: #29D4E8; }
 
-ul li:hover > ul,
-ul li:focus-within > ul, /* this is the line we add */
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-	clear: both;
-  width: 100%;
-}
-
+#sidebartoggler {
+  display: none; }
+  #sidebartoggler:checked + .page-wrapper .sidebar {
+    left: 0px; }
+  #sidebartoggler:checked + .page-wrapper {
+    left: 200px; }
+  #sidebartoggler:checked + .page-wrapper .page-content {
+    padding-left: 200px; }
 /* --------------- FIM Menu --------------- https://css-tricks.com/solved-with-css-dropdown-menus/ */
 
 /* ---------- Barra de nav ------------ */
