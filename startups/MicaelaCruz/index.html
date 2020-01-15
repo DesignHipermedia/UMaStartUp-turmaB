@@ -12,9 +12,17 @@
         body{
             margin: 20px;
         }
+        .barra{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
         #menu ul{
-            font-size: x-large;
-            margin: 20px;
+            font-size: xx-large;
+            margin: 40px;
             list-style: none;
         }
         #menu ul li{
@@ -31,18 +39,19 @@
         }
         .cards1{
             padding: 50px 50px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 20px;
         }
         .cards2{
             display: inline-flex;
             padding: 50px 60px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 50px;
         }
         .cards3{
             padding: 50px 50px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px;
         }
         .bt{
             font-family: 'Courier New', Courier, monospace;
@@ -53,6 +62,14 @@
             color: #6B3412;
             font-weight: 900;
             margin: 150px;
+        }
+        footer {
+            color:black;
+            margin-left: 40%;
+        }
+
+        footer .container .col-lg-12 {
+            padding: 60px;
         }
         
     </style>
@@ -77,6 +94,7 @@
         </ul>
     </header>
     </div>
+    <div class="barra"></div>
     <div class="cards1">
         <div class="imgBx1">
             <img src="immagine_header_4.jpg" width="600" height="400" align="right">
@@ -84,28 +102,50 @@
         <div class="content" align="center">
             <h1>As nossas receitas</h1>
             <p>Aqui vamos mostrar vos algumas receitas dos bolos mais conhecidos.</p>
-    <button class="bt" type="button">Nossas Receitas</button>
+    <a href="receitas.html"><button class="bt" type="button" class="nav-item">Nossas Receitas</button></a>
         </div>
     </div>
     <div class="cards2">
         <div class="imgBx2">
-            <img src="download.jpg" width="600" height="400" align="left">
+            <img src="quem somos.png" width="600" height="400" align="left">
         </div>
         <div class="content" align="center">
             <h1>Quem somos</h1>
             <p>Nos somos uma empresa que ajudamos as pessoas que querem saber mais sobre a cozinha e a padaria/pastelaria.</p>
-    <button class="bt" type="button">Quem somos</button>
+    <a href="quemsomos.html"><button class="bt" type="button" class="nav-item">Quem somos</button></a>
         </div>
     </div>
     <div class="cards3">
-        <div class="imgBx1">
+        <div class="imgBx3">
             <img src="mapa_contactos_exs.png" width="600" height="400" align="right">
         </div>
         <div class="content" align="center">
             <h1>Contacto</h1>
             <p>Fazemos encomendas e pode contectar connosco aqui</p>
-    <button class="bt" type="button">Contacto</button>
+    <a href="contactos.html"><button class="bt" type="button" class="nav-item">Contacto</button></a>
         </div>
     </div>
+    <footer>
+        <div class="container px-0">
+            <div class="col-lg-12 text-center" align="center">
+                <h3>Doçaria.micas</h3>
+                    <div class="social-media">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                <p>&copy; 2020 Universidade da Madeira</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

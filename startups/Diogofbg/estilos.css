@@ -167,7 +167,6 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 1s;
     transform-style: preserve-3d;
 }
@@ -181,17 +180,28 @@ footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: white;
     color: black;
     text-align: center;
     font-size: 60px;
-    border-radius: 5px;
     backface-visibility: hidden;
+    border-bottom: orange solid 2px;
+    box-shadow: -1px 9px 5px -8px rgba(0,0,0,1);
+    border-radius: 20px;
+
+}
+.img3{
+    width: 100%;
+    height: 100%;
     border-radius: 30px;
 }
+.img4{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
 
+}
 .back {
-    background: #a6a6a6;
     color: black;
     transform: rotateY( 180deg);
 }
@@ -206,10 +216,17 @@ footer {
 }
 
 .img {
-    width: 500px;
+    width: 450px;
     height: 450px;
-    border-radius: 30px;
-    object-fit: cover;
+    border-radius: 130px;
+    margin-top: -50px;
+}
+.img2 {
+    width: 450px;
+    height: 450px;
+    border-radius: 160px;
+    margin-top: -50px;
+    margin-left: -30px;
 }
 
 .chefe2 {
@@ -341,9 +358,11 @@ footer {
     transition: transform 0.5s;
 
 }
-.cartao:hover .conteudo .texto2{
-    animation: animacao 1.2s forwards;
-    animation-delay: 0.2s;
+.cartao:hover h1{
+    opacity: 1;
+    transform: rotateY(180deg);
+    margin-top: 330px;
+    text-shadow: 2px 2px black;
 }
 .frente, .tras {
     position: absolute;
@@ -382,6 +401,31 @@ footer {
     width: 300px;
     height: 300px;
 }
+.imagem4{
+    width: 300px;
+    height: 400px;
+    margin-top: -90px;
+}
+.imagem5{
+    width: 250px;
+    height: 320px;
+}
+.imagem6{
+    width: 450px;
+    height: 490px;
+    margin-left: -72px;
+    margin-top: -130px;
+}
+.imagem7{
+    width: 300px;
+    height: 220px;
+    margin-top: 30px;
+}
+.imagem8{
+    width: 300px;
+    height: 260px;
+    margin-top: 20px;
+}
 .texto{
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
@@ -408,4 +452,65 @@ footer {
     text-align: center;
     line-height: 1;
     margin-top: 100px;
+}
+.texto4{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 60px;
+}
+.texto5{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 110px;
+    
+}
+.texto6{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 60px;
+    
+}
+.texto7{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 80px;
+    
+}
+.texto8{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 2px 2px brown;
+    text-align: center;
+    line-height: 1;
+    margin-top: 90px;
+    
+}
+.titulo_hamburgo{
+    transform: translateY(280px);
+    text-align: center;
+    color: orange;
+    opacity: 0;
+}
+.titulo_hamburgo:hover{
+    transform: translateY(300px);
+    text-align: center;
+    color: orange;
+    opacity: 1;
 }

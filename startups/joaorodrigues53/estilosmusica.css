@@ -6,7 +6,7 @@ body{
 }
 .imagem{
     background-image: url('musicas.jpg');
-    height: 500px;
+    height: 400px;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -75,6 +75,7 @@ a:hover{
 
 .negrito{
   font-weight: bold;
+
 }
 
 
@@ -90,7 +91,7 @@ a:hover{
 footer{
     width: 100%;
     height: 300px;
-    margin-top: 1000px;
+    margin-top: 1300px;
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
     border-top: 3px solid #99ff66;
@@ -126,23 +127,23 @@ footer{
 .titulocorpo{
     margin: 0;
     margin-top: 50px;
-    font-size: 50px;
+    margin-bottom: 70px;
+    font-size: 100px;
     background: -webkit-linear-gradient(#2457d7, #3b125d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    animation: fadein 4s forwards;
-    animation-delay: .5s;
     text-shadow: 2px 2px 8px #3b125d;
 }
+
 .grid {
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 70px;
+    grid-row-gap: 100px;
 }
 
 .corpo{
@@ -201,12 +202,30 @@ footer{
   color: #03446A;
   text-align: center;
   font-size: 60px;
-  /* border-radius: 5px; */
+  
   backface-visibility: hidden;
 }
 
 .back {
-  background: #03446A;
+  background: #fff;
   color: white;
   transform: rotateY( 180deg );
 }
+.info{
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    margin-top: -45px;
+    font-size: 35px;
+}
+
+ hr {
+    width: 400px;
+    height: 3px;
+    margin-top: 10px;
+    border: 0;
+    box-shadow: 2px 2px 8px #3b125d;
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    border-radius: 2px;
+ }
