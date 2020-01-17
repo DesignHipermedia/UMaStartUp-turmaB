@@ -55,19 +55,6 @@ hr {
   font-family: $font-stack;
 }
 
-
-a:after {
-  content: '';
-
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-
-  border-width: 0 0 1px;
-  border-style: solid;
-}
-
 .ai-normal {
   @include align-items(normal !important);
 }
