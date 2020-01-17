@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 60%;
+  background: linear-gradient(45deg,#353535c5,#427ea7cc);
+
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #775b69;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+/* -------------- Conteudo-contato -------------- */
+.titulo_contato{
+font-size: 4em;
+text-align: center;
+color: #fff;
+}
+
+.conteudo_contato{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: 0.5fr;
+  grid-gap: 1em;
+  justify-content: center;
+  justify-items: center;
+  border: #101d2c;
+  
+}
+  input[type=text], select, textarea, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 10px;
+  }
+  .descricao{
+    font-size: 2em;
+    text-align: center;
+  }
+    .btn_filme{
+      background-color: transparent;
+      border: none;
+      color: #775b69;
+      font-family: sans-serif;
+      font-size: 1.3em;
+      cursor: pointer;
+      width: 100px;
+    }
+    .btn_filme:hover{
+      color: #101d2c;
+    }
+   .extras{
+    font-size: 3em;
+    background-color: rgba(194, 65, 26, 0.452);
+  }
+
+.coment{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+  .utilizador{
+    font-size: 3em;
+    background-color: #292929;
+  }
+  .comentario{
+    font-size: 3em;
+    background-color: #434547;
+  }
+
+
+#anim{
+position: relative;
+}
+#anim::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(75, 128, 177);
+  transition-delay: 0.2s;
+  transition-duration: 200ms;
+}
+#anim::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(75, 128, 177);
+  transition-delay: 0.2s;
+
+  transition-duration: 200ms;
+}
+#anim:hover::before,
+#anim:hover::after{
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(70, 70, 70);
+  transition: 0.2s;
+  cursor: pointer;
+}
+/* -------------- FIM Conteudo-contato -------------- */
+
+/*----------------- footer -----------------*/
+.footer {
+  background-color: #101d2c;
+  padding: 8rem;
+
+}
+
+.nav{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+
+  
+}
+.nav__link{
+      display: block;
+      padding: 1.5rem;
+      transition: all .2s;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .nav__link:hover{
+      transform: translateY(-3px);
+      background-color: rgba(#fff, .05);
+      
+  }
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #696969;
+}
+
+.marca-agua {
+  opacity: 0.3;
+  color: #111;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+/*----------------- FIM footer -----------------*/
+
+/*----------------- Animação botoes -----------------*/
+
+#anim{
+  position: relative;
+}
+#anim::before{
+  position: absolute;
+  content: '';
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(75, 128, 177);
+  transition-delay: 0.2s;
+  transition-duration: 200ms;
+}
+#anim::after{
+  position: absolute;
+  content: '';
+  bottom: -1px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(75, 128, 177);
+  transition-delay: 0.2s;
+
+  transition-duration: 200ms;
+}
+#anim:hover::before,
+#anim:hover::after{
+  width: 100%;
+}
+
+/*----------------- FIM Animação botoes -----------------*/
+
+/* --------------- Menu --------------- */
+.page-content {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  margin: 0 auto;
+  }
+
+
+.titulo {
+  padding: 4rem;
+  font-size: 4rem;
+  color: #fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:0;
+  position: relative;
+}
+
+.menu_botao:hover{
+  color: rgb(70, 70, 70);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(70, 70, 70);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.sidebar {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: -190px;
+  width: 150px;
+  padding: 30px;
+  font-size: 0.4em;
+  background: rgb(70, 70, 70);
+  color: white;
+  z-index: 200; }
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    text-transform: uppercase;
+    opacity: .5;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .sidebar a:hover {
+      opacity: 1;
+      color: rgb(75, 128, 177); }
+
+#sidebartoggler {
+  display: none; }
+  #sidebartoggler:checked + .page-wrapper .sidebar {
+    left: 0px; }
+  #sidebartoggler:checked + .page-wrapper {
+    left: 200px; }
+  #sidebartoggler:checked + .page-wrapper .page-content {
+    padding-left: 200px; }
+/* --------------- FIM Menu --------------- */
+
+/* ---------- Barra de nav ------------ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(61, 61, 61);
+}
+::-webkit-scrollbar-corner{
+  background: rgb(61, 61, 61);
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(184, 184, 184); 
+}
+/* ---------- FIM Barra de nav ------------ */
+
+
+
+/* 
+Cenas:
+-Menu ln 208-210, clica e ao hover abre mais um menu
+-ficha3a searchbar, colocar do lado direito do titulo (fim)
+
+
+Pag individual de filme:
+-Img à esquerda, discrição à direita e like botao animação
+
+Pag login:
+
+*/

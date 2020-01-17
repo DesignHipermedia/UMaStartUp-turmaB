@@ -6,7 +6,7 @@
     font-size: 60px;
     font-family: 'Chela One', cursive;
 }
-a{
+.a_titulo{
     color: transparent;
 }
 body{
@@ -21,12 +21,6 @@ body{
     grid-column-gap: 25px;
     grid-row-gap: 50px;
 }
-.boxpc img{
-    width: 500px;
-    height: 500px;
-    object-fit:cover;
-    
-}
 .welcome{
     text-align: center;
     color: white;
@@ -34,8 +28,90 @@ body{
     font-family: 'Chela One', cursive;
     padding: 50px 0 0 0;
 }
-.informacaopc ul{
-    position: absolute;
-    margin-top: -400px;
+.informacaopc{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    text-align: center\;
+}
+.textoinformacaopc{
     color: white;
+    font-size: 25px;
+    font-family: 'Chela One', cursive;
+    
+}
+.textoinformacaopc li{
+    color: white;
+    font-size: 25px;
+    font-family: 'Chela One', cursive;
+    text-align: justify;
+}
+.informacaopcimg{
+    width: 750px;
+    height: 750px;
+    object-fit: cover;
+    border-radius: 25px;
+    
+}
+.pcscrollbar{
+    margin: 5px;
+    width: 1100px;
+    height: 350px;
+    border: 2px solid #341C09;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto ;
+    text-align: center;
+}
+.pcimgscroll{
+    /* width: 350px;
+    height: 320px;
+    object-fit: cover; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+}
+.scrollbar {
+    margin: 5px;
+    width: inherit;
+    height: max-content;
+    border: 2px solid #341C09;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto ;
+    text-align: center;
+  }
+.pcscroll{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+}
+
+.item {
+    width: 250px;
+    height: 250px;
+    flex: 0 0 auto;
+}
+.grid-produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+    text-align: center;
+}
+.pc{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
 }
