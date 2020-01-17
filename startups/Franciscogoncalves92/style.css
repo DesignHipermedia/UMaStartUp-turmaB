@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('walpaper/walpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: x-large;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 110px;
+    height: auto; 
+    margin-top: 60px;
+}
+.main {
+    max-width: 1750px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 65px;
+    
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.titulo{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 90px;
+    color: white;
+}
+.copyright{
+    justify-content: center;
+    position: absolute;
+    margin-top: 945px;
+    margin-left: 45%;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }

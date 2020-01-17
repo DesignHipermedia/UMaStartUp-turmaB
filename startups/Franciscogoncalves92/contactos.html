@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agência de viagens | Contactos</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="titulo">
+                <h2>Agência de viagens</h2>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="active">
+                    <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+                </li>
+                <li class="active">
+                    <a href="preços.html" class="nav-link">Preços</a>
+                </li>
+                <li class="active">
+                    <a href="galeria.html" class="nav-link">Galeria</a>
+                </li>
+                <li class="active">
+                    <a href="contactos.html" class="nav-link">Contacte-nos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="map">
+            <img src="mapa.jpeg " >
+        </div>
+        <div class="nomemap">
+            <h3>Caminho da Achada 10, 9000-208 Funchal</h3>
+        </div>
+        <div class="contactos">
+            <div class="h2">
+                <h2>CONTACTO</h2>
+            </div>  
+            <input type="text" name="Nome" placeholder="Nome">
+            <input type="text" name="E-Mail" placeholder="E-Mail">
+            <input type="text" name="Telefone" placeholder="Telefone">
+            <textarea name="Mensagem" placeholder="Escreva aqui a sua mensagem"></textarea>
+            <input type="button" value="ENVIAR" id="botao">
+        </div>
+        <p class="copyright">
+            Copyright &copy; UNIVERSIDADE da MADEIRA
+        </p>
+
+    </header>
+</body>
+<style>
+.contactos{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 100vw 100vh;
+    width: 500px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 350px;
+    margin-left: 300px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+.h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+#botao{
+    background: #052244;
+    color: white;
+    padding: 12px;
+}
+#botao:hover{
+    cursor: pointer;
+}
+
+.map{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 1150px;
+    border: 3px black solid;
+    color: white;  
+}
+.nomemap{
+    position: absolute;
+    margin-top: 710px;
+    margin-left: 1455px;
+    color: white;  
+    font-size: 100vw 100vh;
+    
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('walpaper/walpaper5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: x-large;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.main {
+    max-width: 1750px;
+    margin: auto;
+}
+.logo img{
+    float: left;
+    width: 110px;
+    height: auto; 
+    margin-top: 60px;
+}
+.titulo{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 90px;
+    color: white;
+}
+.copyright{
+    justify-content: center;
+    position: absolute;
+    margin-top: 945px;
+    margin-left: 45%;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+</style>
+</html>

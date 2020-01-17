@@ -48,7 +48,8 @@ b {
   margin:0;
 }
 hr {
-  border-bottom: 4px solid $dark-red;
+  border:0;
+  border-bottom: 5px solid $dark-red;
 }
 *, body, html {
   font-family: $font-stack;
