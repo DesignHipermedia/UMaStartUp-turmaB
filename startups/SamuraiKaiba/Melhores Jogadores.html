@@ -25,11 +25,12 @@
             text-decoration: none;
             text-shadow: 0px 1px 0px #1570cd;
         }
-        .container_1{
+        .container {
             position: relative;
             width: 50%;
         }
-        image{
+
+        .image {
             opacity: 1;
             display: block;
             width: 100%;
@@ -37,28 +38,32 @@
             transition: .5s ease;
             backface-visibility: hidden;
         }
+
         .middle {
             transition: .5s ease;
             opacity: 0;
             position: absolute;
-            top: 50%;
+            top: 50%;     
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             text-align: center;
         }
+
         .container:hover .image {
             opacity: 0.3;
-        }     
-        .container:hover.middle{
-            opacity: 1;
+        }       
+
+        .container:hover .middle {
+        opacity: 1;
         }
+
         .text {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            padding: 16px 32px;
-        } 
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        }
     </style>
 </head>
 <body>
@@ -71,10 +76,7 @@
     <div class="container_1">
         <img src="Mike_Trout.Jpg" class="image">
         <div class="middle">
-                <div class = "text">
-                <h2> Mike Trout é um dos melhores jogadores de beisebol da atualidade, com 3 prêmios de MVP em sua posse e sendo 8 vezes indicado para o jogo das estrelas.</h2>
-                <h2> Mike Trout é um candidato permanente a ganhar o prêmio mais importante todos os anos</h2>
-                </div>
+            <div class = "text">Mike Trout é um dos melhores jogadores de beisebol da atualidade, com 3 prêmios de MVP em sua posse e sendo 8 vezes indicado para o jogo das estrelas.</div>
         </div>
     </div>
 </body>
