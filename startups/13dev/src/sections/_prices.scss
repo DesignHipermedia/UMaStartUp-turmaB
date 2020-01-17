@@ -58,6 +58,9 @@
 
 .prices {
   min-height: 500px;
+  //& > .container {
+  //  width: 100%;
+  //}
   &__background {
     background-repeat: repeat-x;
     background-image: url("../img/prices-bg.png");
@@ -77,8 +80,21 @@
     background-color: $yellow;
     color: #fff;
     border-bottom: 4px solid $dark-yellow;
-  }
 
+    @include sm {
+      margin-bottom: 40px;
+    }
+    @include md {
+      margin-bottom: 40px;
+    }
+  }
+  &__interval {
+    text-align: center;
+    color: $grey;
+    font-weight: 700;
+    font-size: 16px!important;
+    margin-top: 10px;
+  }
   &__item--classic {
     box-shadow: 0 0 15px $dark-yellow;
   }
@@ -116,7 +132,7 @@
   &__table > div {
     padding: 10px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
   }
 
   &__price {
@@ -129,7 +145,7 @@
     font-size: 25px!important;
     font-weight: 500!important;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
   }
 }
 

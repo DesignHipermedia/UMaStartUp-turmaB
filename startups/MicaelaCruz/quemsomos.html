@@ -12,9 +12,17 @@
         body{
             margin: 20px;
         }
+        .barra{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
         #menu ul{
-            font-size: x-large;
-            margin: 20px;
+            font-size: xx-large;
+            margin: 40px;
             list-style: none;
         }
         #menu ul li{
@@ -29,15 +37,31 @@
         #menu ul li a:hover{
             color: rgb(255, 255, 255);
         }
-        .como{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0%;
+        .cards1{
             display: inline-flex;
+            margin: 20px;
+            padding: 50px 60px;
+        }
+        .como{
+            font-family:  Georgia, 'Times New Roman', Times, serif;
+            margin: 0%;
+            
+        }
+        .titulo{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            color: #6B3412;
         }
     </style>
 </head>
 
 <body>
+<div class="logotipo" align="center">
+    <img src="logotipofinal.png" width="300" height="200" align="center">
+</div>
+<div class="titulo" align="center">
+    <h2>Pastelaria.micas</h2>
+</div>
     <div id="menu" align="center">
     <header>
         <ul>
@@ -56,10 +80,37 @@
         </ul>
     </header>
     </div>
-    <div class="como"> 
-        <h1>Quem somos</h1>
-        <p> Nos somos uma empresa da Ilha da Madeira-Funchal e aqui vamos ensinar-vos como fazer bolos e outras doçarias e neste mesmo site mostramos as nossas receitas e imagens dos nossos bolos.
-        </p>
+    <div class="cards1">
+        <div class="imgBx1">
+            <img src="quem somos.png" width="600" height="400" align="right">
+        </div>
+        <div class="como" align="center"> 
+            <h1>Quem somos</h1> 
+            <p> Nos somos uma empresa da Ilha da Madeira-Funchal e aqui vamos ensinar-vos como fazer bolos e outras doçarias e neste mesmo site mostramos as nossas receitas e imagens dos nossos bolos.
+            </p>
+        </div>
     </div>
+    <footer>
+        <div class="container px-0">
+            <div class="col-lg-12 text-center" align="center">
+                <h3>Doçaria.micas</h3>
+                    <div class="social-media">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                <p>&copy; 2020 Universidade da Madeira</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

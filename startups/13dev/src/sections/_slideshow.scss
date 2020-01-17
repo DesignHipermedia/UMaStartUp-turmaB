@@ -2,6 +2,9 @@
   min-height: 600px;
   background-color: $dark-grey;
   position: relative;
+  //& > .container {
+  //  width: 100%;
+  //}
 
   &-image {
     background-repeat: repeat-x;
