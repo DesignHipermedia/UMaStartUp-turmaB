@@ -93,6 +93,165 @@ section{
 }
 /*----------------- FIM footer -----------------*/
 
+/* -------------- Conteudo-filme -------------- */
+
+.filme_c{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat( 2, 1fr);
+
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+  justify-content: center;
+  justify-items: center;
+  border: #101d2c;
+}
+  .titulo_filme{
+    object-fit: contain;
+    position: relative;
+  }
+  .descricao{
+    font-size: 2em;
+    text-align: center;
+  }
+    .botao_filme{
+      background-color: transparent;
+      border: none;
+      color: #775b69;
+      font-family: sans-serif;
+      font-size: 1.3em;
+      cursor: pointer;
+      width: 100px;
+    }
+    .botao_filme:hover{
+      color: #101d2c;
+    }
+   .extras{
+    font-size: 3em;
+    background-color: rgba(194, 65, 26, 0.452);
+  }
+
+.coment{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+}
+  .utilizador{
+    font-size: 3em;
+    background-color: #292929;
+  }
+  .comentario{
+    font-size: 3em;
+    background-color: #434547;
+  }
+
+/* -------------- FIM Conteudo-filme -------------- */
+
+/* -------------- Conteudo-login login.html -------------- */
+.titulo_login{
+  font-size: 4em;
+  text-align: center;
+  color: #fff;
+  }
+
+.validar{
+  padding: 10px 10px 10px 10px;
+  border: #2a486b 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* -------------- FIM Conteudo-login login.html -------------- */
+
+
+/* -------------- Conteudo-sobre -------------- */
+.titulo_sobre{
+font-size: 4em;
+text-align: center;
+color: #fff;
+}
+
+.conteudo{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(2, 1fr);  
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+  justify-content: center;
+  justify-items: center;
+  border: #101d2c;
+}
+  .descricao{
+    font-size: 2em;
+    text-align: center;
+  }
+    .botao_sobre{
+      background-color: transparent;
+      border: none;
+      color: #775b69;
+      font-family: sans-serif;
+      font-size: 1.3em;
+      cursor: pointer;
+      width: 100px;
+    }
+    .botao_sobre:hover{
+      color: #101d2c;
+    }
+
+/* -------------- FIM Conteudo-sobre -------------- */
+
+/* -------------- Conteudo-contato contato.html -------------- */
+.titulo_contato{
+font-size: 4em;
+text-align: center;
+color: #fff;
+}
+
+.conteudo_contato{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: 0.3fr;
+  grid-gap: 1em;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 1em;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 10px;
+  }
+  .descricao{
+    font-size: 2em;
+    text-align: center;
+  }
+    .botao_contato{
+      background-color: #fff;
+      border: solid;
+      border-radius: 1em;
+      border-width: 0;
+      color: #775b69;
+      font-family: sans-serif;
+      font-size: 1.3em;
+      cursor: pointer;
+      width: 15em;
+      height: 3em;
+      text-align: center;
+    }
+    .botao_contato:hover{
+      color: #2a486b;
+      border-width: 0.4em;
+      transition: 0.5s;
+    }
+
+/* -------------- FIM Conteudo-contato -------------- */
+
 
 /*----------------- Cartaz-filme -----------------*/
 .cards2{
@@ -243,6 +402,10 @@ section{
   width: 100%;
 }
 
+#login:hover{
+  border-bottom: solid #2a486b 5px;
+  transition: 500ms;
+}
 /*----------------- Fim Cartaz-filme -----------------*/
 
 /* --------------- Menu --------------- */
@@ -301,14 +464,26 @@ a:hover {
   .sidebar ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    padding-top: 1em;
+    text-align: center;
+  }
   .sidebar li {
+    justify-content: center;
+    border-bottom: 2px solid#727272;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    margin: 10px;
     text-transform: uppercase;
     opacity: .5;
     cursor: pointer;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in; }
+    transition: all 0.5s ease-in; 
+  }
+  .sidebar li:nth-last-child(1){
+    border-bottom: 0px;
+  }
     .sidebar a:hover {
       opacity: 1;
       color: rgb(75, 128, 177); }
