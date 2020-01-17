@@ -17,12 +17,25 @@
 
 .highlights {
   background-color: $red;
+  //& > .container {
+  //  width: 100%;
+  //}
 }
 
+
+
 .highlights .row > div {
-  padding: 0 15px;
+  @include xl {
+    margin-bottom: 20px;
+  }
+  @include lg {
+    margin-bottom: 20px;
+  }
 }
 .highlight {
+
+
+
   background-color: $dark-red;
   color: #fff;
   &__icon {
