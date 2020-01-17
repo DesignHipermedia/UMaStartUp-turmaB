@@ -5,6 +5,11 @@ nav {
   border-bottom: 4px solid $dark-red;
   height: auto;
   padding-bottom: 7px;
+
+  & .active {
+    background: darken($dark-red, 20%);
+    box-shadow: 0 0 5px darken($dark-red, 10%);
+  }
 }
 
 nav .row {
