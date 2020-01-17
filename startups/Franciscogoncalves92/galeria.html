@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agência de viagens | Galeria</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="titulo">
+                <h2>Agência de viagens</h2>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="active">
+                    <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+                </li>
+                <li class="active">
+                    <a href="preços.html" class="nav-link">Preços</a>
+                </li>
+                <li class="active">
+                    <a href="galeria.html" class="nav-link">Galeria</a>
+                </li>
+                <li class="active">
+                    <a href="contactos.html" class="nav-link">Contacte-nos</a>
+                </li>
+            </ul>
+        </div>
+        <section class="gallery">
+            <figure class="gallery__item gallery__item--1"><img src="img/img1.jpg" alt="Gallery image 1" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--2"><img src="img/img2.jpg" alt="Gallery image 2" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--3"><img src="img/img3.jpg" alt="Gallery image 3" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--4"><img src="img/img4.jpg" alt="Gallery image 4" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--5"><img src="img/img5.jpg" alt="Gallery image 5" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--6"><img src="img/img6.jpg" alt="Gallery image 6" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--7"><img src="img/img7.jpg" alt="Gallery image 7" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--8"><img src="img/img8.jpg" alt="Gallery image 8" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--10"><img src="img/img10.jpg" alt="Gallery image 10" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--11"><img src="img/img11.jpg" alt="Gallery image 11" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--12"><img src="img/img12.jpg" alt="Gallery image 12" class="gallery__img"></figure>
+           
+
+        <p class="copyright">
+            Copyright &copy; UNIVERSIDADE da MADEIRA
+        </p>
+    </header>
+</body>
+<style>
+.gallery {
+  display: grid;
+width: 75%;
+      grid-template-columns: repeat(15, 1fr);
+      grid-template-rows: repeat(7, 5vw);
+  gap: 1.1rem;
+}
+.gallery__img {
+  width: 200%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-top: 130px;
+}
+
+.gallery__item--1 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2 ;
+  
+}
+.gallery__item--2 {
+    grid-row: 1 / span 2;
+    grid-column: 5 / span 2 ;
+}
+.gallery__item--3{
+    grid-row: 1 / span 3 ;
+    grid-column: 15 / span 1 ;
+}
+.gallery__item--4 {
+    grid-row: 1 / span 3;
+    grid-column: 9 / span 3  ;
+}
+.gallery__item--5 {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2 ;
+}
+.gallery__item--6 {
+    grid-row: 3 / span 3;
+    grid-column: 5 / span 2 ;
+}
+.gallery__item--7 {
+    grid-row: 4 / span 3;
+    grid-column: 1 / span 2 ;
+}
+.gallery__item--8 {
+    grid-row: 5 / span 2;
+    grid-column: 9 / span 4 ;
+}
+.gallery__item--10 {
+    grid-row: 4 / span 1;
+    grid-column: 13 / span 2 ;
+}
+.gallery__item--11 {
+    grid-row: 6 / span 1;
+    grid-column: 5 / span 2 ;
+}
+.gallery__item--12 {
+    grid-row: 4 / span 1;
+    grid-column: 9 / span 2 ;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('walpaper/walpaper4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-right: 80px;
+    font-size: x-large;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.main {
+    max-width: 1750px;
+    margin: auto;
+}
+.logo img{
+    float: left;
+    width: 110px;
+    height: auto; 
+    margin-top: 60px;
+}
+.titulo{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 90px;
+    color: white;
+}
+.copyright{
+    justify-content: center;
+    position: absolute;
+    margin-top: 870px;
+    margin-left: 35%;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+</style>
+</html>

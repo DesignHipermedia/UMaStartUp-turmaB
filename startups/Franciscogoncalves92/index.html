@@ -4,180 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Agência de Viagens</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Agência de viagens</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="box1">
-            <img src="logo.jpg">
-            <div class="titulo"><h2>Agência de Viagens</h2></div> 
-        </div><img src="logotop.jpg" width="700" height="200">
-        <div></div>
-    </div>
-    <nav class="nav" >
-    <button class="botao" id="botao1">Destinos</button>
-    <button class="botao" id="botao2">Viagens</button>
-    <button class="botao" id="botao3">Preços</button>
-    <button class="botao" id="botao4">Apoio</button>
-    </nav>
-
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="titulo">
+                <h2>Agência de viagens</h2>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="active">
+                    <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+                </li>
+                <li class="active">
+                    <a href="preços.html" class="nav-link">Preços</a>
+                </li>
+                <li class="active">
+                    <a href="galeria.html" class="nav-link">Galeria</a>
+                </li>
+                <li class="active">
+                    <a href="contactos.html" class="nav-link">Contacte-nos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>QUAL O TEU PROXIMO DESTINO</h1>
+        </div>
+        <div class="button">
+            <a href="preços.html" class="btn">DESCOBRE JÁ</a>
+        </div>
+        
+        <p class="copyright">
+            Copyright &copy; UNIVERSIDADE da MADEIRA
+        </p>
+        
+    </header>  
 </body>
-<style>
-    body{
-        background-color: burlywood;
-    }
-    .titulo{
-        display: flex;
-        justify-content: right;
-        white-space: nowrap;
-        text-align: center;
-        width: 100px;
-      
-        
-    }
-    .banner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .box1{
-        display: flex;
-        justify-content: center;
-        width: 10px;
-        height: 100px;
-        margin: 10px;
-        margin-left: 150px;
-        margin-top: 70px;
-    }
-    .nav{
-        display:flex;
-        justify-content: center;
-        margin: 10px;
-        font-size: 200px;
-
-    }
-    .botao{
-        position: absolute;
-        width: 250px;
-        height: 100px;
-        margin: 20px;
-        background-color: transparent;
-        border: none;
-        color: black;
-        cursor: pointer;
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 100px;
-    }
-    #botao4{
-        position: relative;
-    }
-    #botao4::before{
-            position: absolute;
-            content:'';
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background-color: black;
-            transition-duration: 200ms;
-        }
-    #botao4::after{
-        position: absolute;
-        content:'';
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao4:hover::before,
-    #botao4:hover::after{
-        width: 100%;
-    }
-    #botao3{
-        position: relative;
-    }
-    #botao3::before{
-        position: absolute;
-        content:'';
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao3::after{
-        position: absolute;
-        content:'';
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao3:hover::before,
-    #botao3:hover::after{
-        width: 100%;
-    }
-    #botao2{
-        position: relative;
-    }
-    #botao2::before{
-        position: absolute;
-        content:'';
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }    
-    #botao2::after{
-        position: absolute;
-        content:'';
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao2:hover::before,
-    #botao2:hover::after{
-        width: 100%;
-    }
-    #botao1{
-        position: relative;
-    }
-    #botao1::before{
-        position: absolute;
-        content:'';
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao1::after{
-        position: absolute;
-        content:'';
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 3px;
-        background-color: black;
-        transition-duration: 200ms;
-    }
-    #botao1:hover::before,
-    #botao1:hover::after{
-        width: 100%;
-    }
-
-</style>
 </html>
