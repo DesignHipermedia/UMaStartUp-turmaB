@@ -48,10 +48,24 @@ b {
   margin:0;
 }
 hr {
-  border-bottom: 4px solid $dark-red;
+  border:0;
+  border-bottom: 5px solid $dark-red;
 }
 *, body, html {
   font-family: $font-stack;
+}
+
+
+a:after {
+  content: '';
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+
+  border-width: 0 0 1px;
+  border-style: solid;
 }
 
 .ai-normal {
