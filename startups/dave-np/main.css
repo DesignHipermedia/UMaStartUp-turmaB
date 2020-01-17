@@ -10,7 +10,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 60%;
   background: linear-gradient(45deg,#353535c5,#427ea7cc);
 
 }
@@ -46,7 +46,6 @@ section{
 /*----------------- footer -----------------*/
 .footer {
   background-color: #101d2c;
-  /* grid-column: full-start / full-end; */
   padding: 8rem;
 
 }
@@ -109,7 +108,7 @@ section{
   width: 230px;
   height: 400px;
   margin: 0 auto;
-  background: rgb(145, 163, 173);
+  background: linear-gradient(45deg,#727272,#a1b2cccb);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
   margin-bottom: 5%;
 }
@@ -132,12 +131,7 @@ section{
   width: 100%;
   height: 100%;
   transition: 1s;
-  object-fit: contain; /* fill */
-}
-/* img-resize */
-#img_ajusta{
-  width: 230px;
-  height: 400px;
+  object-fit: contain;
 }
 
 /* Texto descricao */
@@ -147,13 +141,24 @@ section{
   justify-content: start;
   text-align: center;
 }
+
 /* titulo descricao */
 .cards2 .box2 .face.face1 h2{
   margin: 0;
   padding: 0;
-  font-size: 3em;
-  
+  font-size: 4em;
+  font-weight: bold;
+  color: rgba(6, 85, 138, 0.549);
 }
+.cards2 .box2 .face.face1 p{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.cards2 .box2 .face.face1 p img{
+  width: 30px;
+  position: relative;
+}
+
 .cards2 .box2 .face.face2{
   background: #111;
   transition: 0.5s;
@@ -161,18 +166,11 @@ section{
 .cards2 .box2:hover .face.face2{
   height: 65px;
 }
-/* .cards2 .box2:nth-child(1) .face.face2{
-  background: linear-gradient(45deg,#3503ad,#f7308c);
-}
-.cards2 .box2:nth-child(2) .face.face2{
-  background: linear-gradient(45deg,#ccff00,#09afff);
-}
-.cards2 .box2:nth-child(3) .face.face2{
-  background: linear-gradient(45deg,#e91e63,#ffeb3b);
-}
-.cards2 .box2:nth-child(4) .face.face2{
+
+.cards2 .box2:nth-child(n) .face.face2{
   background: linear-gradient(45deg,#000,#444);
-} */
+}
+
 .cards2 .box2 .face.face2::before{
   content: '';
   position: absolute;
@@ -206,9 +204,9 @@ section{
   cursor: pointer;
   z-index: 100;
 }
-.btn_filme:hover{
-  color: rgb(75, 128, 177);
-}
+  .btn_filme:hover{
+    color: rgb(75, 128, 177);
+  }
 .cards2 .box2:hover .face.face2 .btn_filme{
   opacity: 1;
   transition: 1.3s;
@@ -245,25 +243,38 @@ section{
   width: 100%;
 }
 
+/*----------------- Fim Cartaz-filme -----------------*/
 
-/* --------------- Menu --------------- https://jsfiddle.net/os74zscd/3/ */
-.sidebar {
+/* --------------- Menu --------------- */
+.page-content {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  margin: 0 auto;
+  }
+
+
+.titulo {
   padding: 4rem;
   font-size: 4rem;
   color: #fff;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  z-index:200;
+  z-index:0;
   position: relative;
 }
 
-.tam{
-  font-size: 0.5em;
+.menu_botao:hover{
+  color: rgb(70, 70, 70);
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
@@ -272,50 +283,45 @@ a:hover {
   cursor: pointer;
 }
 
-li {
-	color: #fff;
-	display: block;
-	float: left;
-	padding: 1rem;
-	position: relative;
-	text-decoration: none;
-  transition-duration: 0.5s;
-}
-  
-li a {
-  color: #fff;
-}
-
-li:hover {
-	color: #3c526bc5;
-}
-
-ul li ul {
-	visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-	position: absolute;
+.sidebar {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin-top: 1rem;
-	left: 0;
-  display: none;
-  font-size: 0.5em;
-}
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: -190px;
+  width: 150px;
+  padding: 30px;
+  font-size: 0.4em;
+  background: rgb(70, 70, 70);
+  color: white;
+  z-index: 200; }
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    text-transform: uppercase;
+    opacity: .5;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in; }
+    .sidebar a:hover {
+      opacity: 1;
+      color: rgb(75, 128, 177); }
 
-ul li:hover > ul,
-ul li:focus-within > ul, /* this is the line we add */
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-	clear: both;
-  width: 100%;
-}
-
-/* --------------- FIM Menu --------------- https://css-tricks.com/solved-with-css-dropdown-menus/ */
+#sidebartoggler {
+  display: none; }
+  #sidebartoggler:checked + .page-wrapper .sidebar {
+    left: 0px; }
+  #sidebartoggler:checked + .page-wrapper {
+    left: 200px; }
+  #sidebartoggler:checked + .page-wrapper .page-content {
+    padding-left: 200px; }
+/* --------------- FIM Menu --------------- */
 
 /* ---------- Barra de nav ------------ */
 ::-webkit-scrollbar {
@@ -340,10 +346,8 @@ ul li ul li {
 /* 
 Cenas:
 -Menu ln 208-210, clica e ao hover abre mais um menu
--ficha15 botao2 para <a></a>
 -ficha3a searchbar, colocar do lado direito do titulo (fim)
 
--menu :https://www.w3schools.com/howto/howto_js_sidenav.asp (2)| https://www.cssscript.com/sliding-push-navigation-menu-pure-css/ (1)
 
 Pag individual de filme:
 -Img à esquerda, discrição à direita e like botao animação
@@ -351,7 +355,3 @@ Pag individual de filme:
 Pag login:
 
 */
-
-
-
-/*----------------- Fim Cartaz-filme -----------------*/

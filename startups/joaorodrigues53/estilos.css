@@ -16,7 +16,7 @@ body{
 .musica a{
 
     margin: 0 45px;
-
+    margin-left: ;
     display: inline-block;
     padding: 20px;
     color: white;
@@ -182,6 +182,7 @@ a:hover{
   }
 }
 
+
 @keyframes fadein{
     0%{
         opacity: 0;
@@ -222,6 +223,7 @@ footer{
 
 }
 .titulocorpo{
+
     margin: 0;
     margin-top: 50px;
     margin-bottom: 70px;
@@ -233,7 +235,21 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
 
     text-shadow: 2px 2px 8px #3b125d;
+
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  font-size: 70px;
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(#2457d7, #3b125d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: 2px 2px 8px #3b125d;
+
 }
+
 .corpo .box{
     position: relative;
     width: 380px;
@@ -336,5 +352,17 @@ footer{
     padding: 0 10px;
     color: white;
     text-align: center;
+    align-items: center;
+    
 
+}
+
+hr {
+  width: 600px;
+  height: 3px;
+  margin-top: 10px;
+  border: 0;
+  box-shadow: 2px 2px 8px #3b125d;
+  background: -webkit-linear-gradient(#2457d7, #3b125d);
+  border-radius: 2px;
 }
