@@ -144,6 +144,12 @@ footer {
     display: block;
     margin-top: 500px;
 }
+footer2 {
+    text-align: center;
+    color: orange;
+    display: block;
+    margin-top: 100px;
+}
 
 .grid2 {
     display: grid;
@@ -513,4 +519,44 @@ footer {
     text-align: center;
     color: orange;
     opacity: 1;
+}
+.contacto{
+    color: orange;
+    margin-top: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #000, 1px 1px 0 #000;
+}
+.titulo_contacto{
+    color: white;
+    margin-left: 30px;
+    font-size: 12px;
+    display: relative;
+    padding: 30px;
+    color: orange;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    opacity: 0.5;
+    width: 1000px;
+    text-align: center;
+    margin-top: 45px;
+}
+.titulo_contacto:hover{
+    color: white;
+    margin-left: 30px;
+    font-size: 12px;
+    display: relative;
+    padding: 30px;
+    color: orange;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    opacity: 1;
+}
+::placeholder{
+    color: orange;
+    font-size: 20px;
+}
+.centro{
+    text-align: center;
 }
