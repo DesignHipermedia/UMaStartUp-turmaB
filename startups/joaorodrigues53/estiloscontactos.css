@@ -91,7 +91,7 @@ a:hover{
 footer{
     width: 100%;
     height: 300px;
-    margin-top: 1300px;
+    margin-top: 100px;
     background: #3b125d;
     background: linear-gradient(to right, #2457d7, #3b125d);
     border-top: 3px solid #99ff66;
@@ -137,24 +137,17 @@ footer{
     text-shadow: 2px 2px 8px #3b125d;
 }
 
-.grid {
-    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 70px;
-    grid-row-gap: 100px;
-}
 
 .corpo{
     position: relative;
     flex:1;
     height: 600px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
     margin: 40px 0;
     font-family: 'Josefin Sans', sans-serif;
+    flex-direction: column;
 
 }
 
@@ -221,7 +214,7 @@ footer{
 }
 
  hr {
-    width: 400px;
+    width: 1000px;
     height: 3px;
     margin-top: 10px;
     border: 0;
@@ -229,3 +222,66 @@ footer{
     background: -webkit-linear-gradient(#2457d7, #3b125d);
     border-radius: 2px;
  }
+ .contact_nome {
+    width: 45%;
+    height: 56px;
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_email {
+    width: 45%;
+    height: 56px;
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_assunto {
+    width: 45%;
+    height: 56px;
+    
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_mensagem {
+    width: 45%;
+    height: 200px;
+
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+button{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 56px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+
+}
