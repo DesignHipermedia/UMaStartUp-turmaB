@@ -35,31 +35,22 @@ section{
   flex-wrap:wrap;
 }
 
-/* -------------- Conteudo-contato -------------- */
-.titulo_contato{
-font-size: 4em;
-text-align: center;
-color: #fff;
-}
+/* -------------- Conteudo-filme -------------- */
 
-.conteudo_contato{
+.filme_c{
   display: grid;
   padding: 2em;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: repeat( 2, 1fr);
+
   grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
   justify-content: center;
   justify-items: center;
   border: #101d2c;
-  
 }
-  input[type=text], select, textarea, input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    height: 10px;
+  .titulo_filme{
+    object-fit: contain;
+    position: relative;
   }
   .descricao{
     font-size: 2em;
@@ -98,6 +89,7 @@ color: #fff;
     background-color: #434547;
   }
 
+/* -------------- FIM Conteudo-filme -------------- */
 
 #anim{
 position: relative;
@@ -140,7 +132,6 @@ a:hover {
   transition: 0.2s;
   cursor: pointer;
 }
-/* -------------- FIM Conteudo-contato -------------- */
 
 /*----------------- footer -----------------*/
 .footer {

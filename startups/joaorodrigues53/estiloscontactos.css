@@ -1,0 +1,287 @@
+body{
+    
+    background-size: cover;
+    margin: 0;
+
+}
+.imagem{
+    background-image: url('musicas.jpg');
+    height: 400px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #99ff66;
+}
+.musica a{
+
+    margin: 0 45px;
+
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.active{
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a:hover{
+
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+}
+.link{
+  font-weight: 100;
+}
+.musica{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid #99ff66;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b125d;
+    background-image: linear-gradient(to right, #2457d7, #3b125d);
+    background: #3b125d;
+    background: linear-gradient(to right, #2457d7, #3b125d);
+    font-weight: initial;
+          
+}
+.titulo{
+    display: flex;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+    margin-top: 30px;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+.negrito{
+  font-weight: bold;
+
+}
+
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    background: #3b125d;
+    background: linear-gradient(to right, #2457d7, #3b125d);
+    border-top: 3px solid #99ff66;
+
+
+}
+.rodape{
+    position: absolute;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 42%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.rodape2{
+    margin-top: 60px;
+    padding: 0 10px;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.social-media a{
+    padding: 0 10px;
+    color: white;
+    text-align: center;
+
+}
+.titulocorpo{
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 80px;
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 8px #3b125d;
+}
+
+
+.corpo{
+    position: relative;
+    flex:1;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    flex-direction: column;
+
+}
+
+.corpo .content .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card {
+
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 500px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 200px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #fff;
+  color: white;
+  transform: rotateY( 180deg );
+}
+.info{
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    margin-top: -45px;
+    font-size: 35px;
+}
+
+ hr {
+    width: 1000px;
+    height: 3px;
+    margin-top: 10px;
+    border: 0;
+    box-shadow: 2px 2px 8px #3b125d;
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    border-radius: 2px;
+ }
+ .contact_nome {
+    width: 45%;
+    height: 56px;
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_email {
+    width: 45%;
+    height: 56px;
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_assunto {
+    width: 45%;
+    height: 56px;
+    
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+.contact_mensagem {
+    width: 45%;
+    height: 200px;
+
+    background: transparent;
+    border: solid 2px #e0e7ee;
+    border-radius: 22px;
+    padding-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2a2a2a;
+    outline: none;
+}
+button{
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 56px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    background: -webkit-linear-gradient(#66ff66, #ffcc00);
+
+}
