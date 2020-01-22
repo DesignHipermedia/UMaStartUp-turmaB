@@ -9,6 +9,19 @@ body {
   line-height: 1.6;
 }
 
+footer{
+  color: grey;
+  padding:60px;
+  text-align: center;
+  font-size: 25px;
+  background-color:lightblue;
+}
+
+
+
+
+
+
 #fundo {
   background-image: url("http://w3msolucoesweb.com.br/wp-content/uploads/2013/08/fundo-criacao-de-sites-em-bauru.jpg");
   background-size: cover;
