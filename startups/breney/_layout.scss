@@ -40,7 +40,7 @@
     color:red;
   }
   .container{
-    margin: 1px 100px;
+    
     display:block;
     background-color: #f9f2ec;
   
@@ -77,7 +77,31 @@ color: white;
 }
 .alinhamento {
   
-  display:flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  flex:1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 2px solid #4d2600;
+  
+  border-bottom: 0;
+}
+
+.cafe {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.alinhamento_cafe{
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 2px solid #4d2600;
 }
