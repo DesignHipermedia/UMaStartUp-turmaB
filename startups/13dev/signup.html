@@ -31,9 +31,9 @@
                     <ul class="nav-links">
                         <li class="nav-item"><a href="index.html"><i class="fa fa-home"></i>&nbsp; Inicio</a></li>
                         <li class="nav-item"><a href="services.html"><i class="fa fa-tools"></i>&nbsp; Serviços</a></li>
-                        <li class="nav-item active"><a href="about.html"><i class="fa fa-phone"></i>&nbsp; Contacto</a></li>
-                        <li class="nav-item "><a href="login.html"><i class="fa fa-user"></i>&nbsp; Entrar</a></li>
-                        <li class="nav-item "><a href="signup.html"><i class="fas fa-user-plus"></i>&nbsp; Registar</a></li>
+                        <li class="nav-item"><a href="about.html"><i class="fa fa-phone"></i>&nbsp; Contacto</a></li>
+                        <li class="nav-item"><a href="login.html"><i class="fa fa-user"></i>&nbsp; Entrar</a></li>
+                        <li class="nav-item active"><a href="signup.html"><i class="fas fa-user-plus"></i>&nbsp; Registar</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,32 +42,51 @@
 </nav>
 <!-- /header -->
 
-<div class="about">
+<div class="signup">
     <div class="container">
-        <div class="row">
+        <div class="row center-xs">
             <div class="col-xs-12 center-xs">
-                <h3>Sobre Nos</h3>
+                <h3>Registar <br> </h3>
+                <small>Regista-te para teres acesso a todas as funcionalidades dos nossos serviços!</small>
+
+                <hr>
                 <br>
-                <ul class="start-xs m-t-10 m-l-20">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, rem.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cum in nobis nostrum.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-                <ul class="start-xs m-t-10 m-l-20">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, rem.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-                <br>
-                <br>
-                <p class="start-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut beatae deserunt doloremque esse et harum inventore ipsam maxime nam necessitatibus reprehenderit repudiandae similique sint tempore ullam vero voluptate? Fugiat.</p>
-                <br>
-                <p class="start-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> A, aut beatae deserunt doloremque esse et harum inventore ipsam maxime nam necessitatibus reprehenderit repudiandae similique sint tempore ullam vero voluptate? Fugiat.</p>
+                <form action="" method="POST">
+                    <div class="row center-xs">
+                        <div class="col-xs-12">
+                            <div class="input--email-wrap" >
+                                <input type="text" name="name" class="input--name" placeholder="Nome de Utilizador" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center-xs">
+                        <div class="col-xs-12">
+                            <div class="input--email-wrap" >
+                                <input type="email" name="email" class="input--email" placeholder="Email" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row center-xs">
+                        <div class="col-xs-12">
+                            <div class="input--password-wrap">
+                                <input type="password" name="password" class="input--password" placeholder="Password" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row center-xs">
+                        <div class="col-xs-12">
+                            <div class="input--confirm-password-wrap">
+                                <input type="password" name="confirm-password" class="input--confirm-password" placeholder="Confirmar Password" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-t-10">
+                        <button class="btn-primary" style="width: 240px">Entrar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
