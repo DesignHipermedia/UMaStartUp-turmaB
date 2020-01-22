@@ -2302,4 +2302,262 @@ nav .row {
     font-weight: 400;
     margin-top: 30px; }
 
+.login {
+  position: relative;
+  background-color: #131313;
+  line-height: 1.2em;
+  color: #fff;
+  padding: 60px; }
+  .login h3 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 4px solid #750812;
+    padding-bottom: 20px; }
+  .login form .row {
+    margin: 0 auto; }
+  .login form div {
+    margin-bottom: 10px; }
+  .login form .row div {
+    max-width: 500px; }
+
+.input--email {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--email:hover {
+    cursor: text; }
+  .input--email-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--email-wrap:before {
+      content: '\f0e0';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
+.input--password {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--password:hover {
+    cursor: text; }
+  .input--password-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--password-wrap:before {
+      content: '\f084';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
+.signup {
+  position: relative;
+  background-color: #131313;
+  line-height: 1.2em;
+  color: #fff;
+  padding: 60px; }
+  .signup h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  .signup small {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 0; }
+  .signup hr {
+    margin-top: 20px;
+    margin-bottom: 70px; }
+  .signup form .row {
+    margin: 0 auto; }
+  .signup form div {
+    margin-bottom: 10px; }
+  .signup form .row div {
+    max-width: 500px; }
+
+.input--name {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--name:hover {
+    cursor: text; }
+  .input--name-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--name-wrap:before {
+      content: '\f007';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
+.input--email {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--email:hover {
+    cursor: text; }
+  .input--email-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--email-wrap:before {
+      content: '\f0e0';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
+.input--confirm-password {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--confirm-password:hover {
+    cursor: text; }
+  .input--confirm-password-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--confirm-password-wrap:before {
+      content: '\f084';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
+.input--password {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: #898989;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%; }
+  .input--password:hover {
+    cursor: text; }
+  .input--password-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid #898989;
+    border-radius: 5px;
+    width: auto; }
+    .input--password-wrap:before {
+      content: '\f084';
+      font-family: 'Font Awesome 5 Free';
+      color: #898989;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900; }
+
 /*# sourceMappingURL=main.css.map */
