@@ -16,7 +16,6 @@ body{
 .musica a{
 
     margin: 0 45px;
-
     display: inline-block;
     padding: 20px;
     color: white;
@@ -223,6 +222,19 @@ footer{
 
 }
 .titulocorpo{
+
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 80px;
+    background: -webkit-linear-gradient(#2457d7, #3b125d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+    text-shadow: 2px 2px 8px #3b125d;
+
   margin: 0;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -234,6 +246,7 @@ footer{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   text-shadow: 2px 2px 8px #3b125d;
+
 }
 
 .corpo .box{
@@ -338,6 +351,8 @@ footer{
     padding: 0 10px;
     color: white;
     text-align: center;
+    align-items: center;
+    
 
 }
 

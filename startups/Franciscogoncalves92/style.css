@@ -9,7 +9,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-
+    
 }
 ul{
     float: right;
@@ -37,6 +37,7 @@ ul li a:hover{
     width: 110px;
     height: auto; 
     margin-top: 60px;
+
 }
 .main {
     max-width: 1750px;
