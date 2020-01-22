@@ -93,3 +93,19 @@ ul li a:hover{
     text-align: center;
     text-decoration: none;
   }
+
+.proj {
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 1550px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: x-large;
+}
+.proj:hover{
+    background-color: white;
+    color: black;
+}
