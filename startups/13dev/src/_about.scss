@@ -1,0 +1,25 @@
+.about {
+  position: relative;
+  background-color: $dark-red;
+  line-height: 1.2em;
+  color: #fff;
+  padding: 60px;
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 4px solid #750812;
+    padding-bottom: 20px;
+  }
+
+  ul {
+    font-weight: 600;
+    list-style: circle;
+  }
+
+
+  p {
+    text-align: justify;
+  }
+
+
+}

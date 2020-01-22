@@ -6,6 +6,8 @@ $dark-red: #9C1A26;
 $dark-grey: #222222;
 $grey: #898989;
 
+$dark-dark-grey: #171717;
+
 $yellow: #FFA401;
 $dark-yellow: #CF8B28;
 
@@ -38,11 +40,17 @@ h4 {
   font-weight: 400;
 }
 
+b {
+  font-weight: 700;
+}
 * {
   padding: 0;
   margin:0;
 }
-
+hr {
+  border:0;
+  border-bottom: 5px solid $dark-red;
+}
 *, body, html {
   font-family: $font-stack;
 }
@@ -78,6 +86,15 @@ h4 {
 
 .d-flex {
   @include flexbox;
+}
+
+.container, .row {
+  max-width: 100%!important;
+}
+
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
 }
 @include select('disk', '\f0a0');
 @include select('system', '\f0c2');
