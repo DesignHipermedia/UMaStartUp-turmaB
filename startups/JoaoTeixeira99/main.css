@@ -206,8 +206,20 @@ nav {
   }
 }
 
-body {
-  background-image: url("imagens/backimg3.jpg");
+.barrabranca {
+  background-color: white;
+  width: 101%;
+  height: 1px;
+}
+
+.barravermelha {
+  background-color: #f33f3f;
+  width: 101%;
+  height: 1px;
+}
+
+body .fundo1 {
+  background-image: url("imagens/dede2.jpg");
   /* The image used */
   height: 500px;
   /* You must set a specified height */
@@ -218,10 +230,6 @@ body {
   background-size: cover;
   background-size: cover;
   background-position: top center;
-}
-
-.fundo2 {
-  background-color: black;
 }
 
 .flex-containertop {
@@ -332,11 +340,22 @@ p {
   padding: 2px 16px;
 }
 
+.drifttitleimg {
+  text-align: center;
+  margin: 30px;
+}
+
+div.gallerydrift:hover {
+  border: 1px solid #777;
+}
+
+div.gallerydrift img {
+  width: 100%;
+  height: auto;
+}
+
 div.gallery {
-  margin: 5px;
   border: 1px solid #ccc;
-  float: left;
-  width: 180px;
 }
 
 div.gallery:hover {
@@ -353,12 +372,135 @@ div.desc {
   text-align: center;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.responsive {
+  padding: 3px 3px 0 3px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stancetitle {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.stancetitle h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 710;
+}
+
+.stancetitle h1 em {
+  font-style: normal;
+  color: #f33f3f;
+}
+
+.margemgaleria {
+  max-width: 1300px;
+  margin: 30px auto;
+}
+
+.containerloja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10% 25%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 40px;
+}
+
+.containerloja > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+
+.imgloja img {
+  height: 300px;
+}
+
+.tituloproduto {
+  margin: 10px;
+}
+
+.tituloproduto h1 {
+  color: black;
+}
+
+.precoproduto {
+  margin: 10px;
+}
+
+.descricaoproduto a {
+  color: black;
+}
+
+.descricaoproduto {
+  margin: 10px;
+}
+
+.buttonproduto {
+  margin: 10px;
+}
+
+.button4 {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ralititleimg {
+  text-align: center;
+}
+
+div.galleryrali:hover {
+  border: 1px solid #777;
+}
+
+div.galleryrali img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
-  position: fixed;
-  left: 0;
+  padding: 10px;
   bottom: 0;
   width: 100%;
-  padding: 10px;
 }
 
 .flex-footer {
