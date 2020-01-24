@@ -7,6 +7,7 @@
    #main {
      display: flex;
      min-height: calc(100vh - 40vh);
+     border: 2px solid #4d2600;
    }
    #main > article {
      flex: 1;
@@ -18,30 +19,63 @@
    }
    #main > nav {
      order: -1;
-     margin-left:50px;
-     
+     margin-left:10px;
+     border-right: 2px solid #4d2600;
    }
-   header, footer, article, nav, aside {
-     padding: 1em;
-   }
-    footer {
-     background: #dfbe9f;
-     height: 20vh;
+   #main_cafe {
+    display: flex;
+    min-height: calc(100vh - 40vh);
+    
+    flex: 0 0 20vw;
+    order: -1;
+    
+    margin:79px;
+    display: flex;
+    justify-content: center;
    }
    
+    footer {
+     background: #dfbe9f;
+     
+     
+     border: 2px solid #4d2600;
+    border-top: 0;
+   }
+   #footer_cafe{
+    
+      background: #dfbe9f;
+      
+      
+      border: 2px solid #4d2600;
+   }
+   .article_index{
+    text-align: center;
+    padding: 50px 0 0 0;
+   }
+   nav {
+     
+     height:764px;
+
+   }
+ 
+   .articlesobre{
+    
+   
+    
+    
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+   }
   
   
    header {
-     display:flex;
-     justify-content:center;
-     border-color: 5px black;
-     font-style: Courier New, monospace;
-     font-weight: 500;
-     margin-bottom:50px;
-     border: 2px solid brown;
+    background: #dfbe9f;
+     
    }
    .block  {
-     margin-left:100px;
+    margin-left: 10px;
     
    }
    h1{
@@ -50,15 +84,67 @@
    .tabelinha {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     flex: 1;
+    
+    
    }
    .contentt {
-     width:33.33%;
+    width:400px;
+    
      margin-bottom:10px;
+    margin-right: 30px;
+    padding: 30px 0 0 0;
+    text-align: center;
+     
    }
    
    .imagens {
      width: 300px;
+     height: 200px;
+     border-radius: 5px;;
    }
+
+   .sobre {
+    
+    width:500px;
+    
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+   }
+   .dividir{
+     display:flex;
+     text-align: center;
+     margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+   .article_contacte {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .tabela_contacte {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    border: 3px solid gray;
+    border-radius: 5px;
+  }
+
+
+  .coluna_contacte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-right: 2px solid gray;
+    padding:0 10px 0 0;
+  }

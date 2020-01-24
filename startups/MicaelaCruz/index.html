@@ -12,14 +12,7 @@
         body{
             margin: 20px;
         }
-        .barra{
-            background-color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 50px;
-        }
+        
         #menu ul{
             font-size: xx-large;
             margin: 40px;
@@ -38,20 +31,24 @@
             color: rgb(255, 255, 255);
         }
         .cards1{
-            padding: 50px 50px;
+            padding: 50px 60px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 20px;
+            margin: 50px;
         }
         .cards2{
-            display: inline-flex;
+            padding: 50px 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 50px;
+        }
+        .cards0{
             padding: 50px 60px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 50px;
         }
         .cards3{
-            padding: 50px 50px;
+            padding: 50px 60px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 20px;
+            margin: 50px;
         }
         .bt{
             font-family: 'Courier New', Courier, monospace;
@@ -63,19 +60,25 @@
             font-weight: 900;
             margin: 150px;
         }
-        footer {
-            color:black;
-            margin-left: 40%;
-        }
-
-        footer .container .col-lg-12 {
-            padding: 60px;
+        .titulo{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            color: #6B3412;
         }
         
     </style>
 </head>
 
 <body>
+ 
+<div class="logotipo" align="center">
+    <img src="logotipofinal.png" width="300" height="200" align="center">
+</div>
+<div class="titulo" align="center">
+    <h2>Pastelaria.micas</h2>
+</div> 
+    
+    
     <div id="menu" align="center">
     <header>
         <ul>
@@ -87,14 +90,17 @@
             </li>
             <li class="nav-item">
                 <a href="quemsomos.html" class="nav-link">Quem Somos</a>
-            <li>
+            </li>
+            <li class="nav-item">
+                <a href="eventos.html" class="nav-link">Eventos</a>
+            </li>
             <li class="nav-item pr-3">
                 <a href="contactos.html" class="nav-link">Contacto</a>
             </li>
         </ul>
     </header>
     </div>
-    <div class="barra"></div>
+    
     <div class="cards1">
         <div class="imgBx1">
             <img src="immagine_header_4.jpg" width="600" height="400" align="right">
@@ -115,9 +121,19 @@
     <a href="quemsomos.html"><button class="bt" type="button" class="nav-item">Quem somos</button></a>
         </div>
     </div>
+    <div class="cards0">
+        <div class="imgBx0">
+            <img src="eventos.jpg" width="600" height="400" align="right">
+        </div>
+        <div class="content" align="center">
+            <h1>Eventos</h1>
+            <p>Todos os anos nos fazemos no mês de agosto o desafio de "melhor bolo", podem participar individualmente ou em grupo, no máximo 4 pessoas, para se inscreverem vaiam aos contactos ou então a nossa loja. </p>
+    <a href="eventos.html"><button class="bt" type="button" class="nav-item">Eventos</button></a>
+        </div>
+    </div>
     <div class="cards3">
         <div class="imgBx3">
-            <img src="mapa_contactos_exs.png" width="600" height="400" align="right">
+            <img src="mapa_contactos_exs.png" width="600" height="400" align="left">
         </div>
         <div class="content" align="center">
             <h1>Contacto</h1>

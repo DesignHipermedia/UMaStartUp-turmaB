@@ -35,22 +35,31 @@ section{
   flex-wrap:wrap;
 }
 
-/* -------------- Conteudo-filme -------------- */
+/* -------------- Conteudo-contato -------------- */
+.titulo_contato{
+font-size: 4em;
+text-align: center;
+color: #fff;
+}
 
-.filme_c{
+.conteudo_contato{
   display: grid;
   padding: 2em;
-  grid-template-columns: repeat( 2, 1fr);
-
+  grid-template-columns: 0.5fr;
   grid-gap: 1em;
-  grid-auto-rows: minmax(200px, auto);
   justify-content: center;
   justify-items: center;
   border: #101d2c;
+  
 }
-  .titulo_filme{
-    object-fit: contain;
-    position: relative;
+  input[type=text], select, textarea, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 10px;
   }
   .descricao{
     font-size: 2em;
@@ -88,6 +97,7 @@ section{
     font-size: 3em;
     background-color: #434547;
   }
+/* -------------- FIM Conteudo-contato -------------- */
 
 
 #anim{
@@ -131,7 +141,6 @@ a:hover {
   transition: 0.2s;
   cursor: pointer;
 }
-/* -------------- FIM Conteudo-filme -------------- */
 
 /*----------------- footer -----------------*/
 .footer {

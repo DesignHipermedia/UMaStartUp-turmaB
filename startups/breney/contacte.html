@@ -14,110 +14,77 @@
 </head>
 
 <body class="container">
-  <header>
-    <div class ="alinhamento">
-    <div class="block">
-      <h1> <span>Cafetaria</span>Alegria</h1>
+  <div style ="background-color: white; ">
+    <header>
+      <div class="alinhamento">
+        <div class="block">
+          <h1 > <span>Cafetaria</span>Alegria</h1>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cafe.html">Café</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a class="active" href="contacte.html">Contacte - nos</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="main">
+
+
+      <nav>
+        <h1>CafetariaAlegria</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia amet, laboriosam beatae ipsa
+          aspernatur pariatur tempore quaerat eaque! Consequuntur nihil autem, voluptatibus placeat omnis molestiae?
+          Consequatur quos dolor totam!</p>
+      </nav>
+      <article class="article_contacte">
+        <div class="tabela_contacte">
+          <div>
+            <h2 style="padding: 10px 10px 10px 20px;">Contacte - nos</h2>
+            <div style="display: flex; padding: 0 0 20px 0;">
+              <div class="coluna_contacte">
+                <div>
+                <a>Morada : 49 Rua João Augusto de Ornelas Estreito De Câmara, Madeira
+                </a>
+                <p></p>
+                <a>Email: brunopy2@gmail.com</a>
+                <p></p>
+                <a>Telefone: 291 523 564</a>
+                <p></p>
+              </div>
+                <div>
+                  <h1><a href="cafealegria.html">CafetariaAlegria</a></h1>
+                </div>
+
+              </div>
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!4v1578777839171!6m8!1m7!1sniQA2qSbGbro0lJ4ciXTtA!2m2!1d32.67313528832064!2d-16.97805304574656!3f158.63780352125892!4f-19.68340615024964!5f0.7820865974627469"
+                  width="600" height="450" frameborder="0" style="border-radius:5px; padding:0px 10px 10px 10px;"
+                  allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
     </div>
+    
+    <footer>
+      <div class="conteudo">
+        <h3>CafetariaAlegria</h3>
 
-    <ul>
-      <li><a class="active" href="#home">Inicio</a></li>
-      <li><a href="#news">Café</a></li>
-      <li><a href="#contact">Sobre</a></li>
-      <li><a href="#about">Contacte - nos</a></li>
-    </ul>
+        <div>
+          <a href="https://pt-pt.facebook.com/pages/category/Musician-Band/Maria-Leal-1072979952789448/"
+            class="fa fa-facebook"></a>
+          <a href="https://twitter.com/ricfazeres" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/user/RicFazeres" class="fa fa-youtube"></a>
+        </div>
+        <p>© 2019 Universidade da Madeira</p>
+      </div>
+    </footer>
   </div>
-  </header>
-  <div id="main">
-
-    <article>
-
-
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="Imagens\cafe1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="Imagens/cafe2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="Imagens/cafe3.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
-    </article>
-    <nav>
-      <h1>CafetariaAlegria</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia amet, laboriosam beatae ipsa aspernatur pariatur tempore quaerat eaque! Consequuntur nihil autem, voluptatibus placeat omnis molestiae? Consequatur quos dolor totam!</p>
-    </nav>
-
-
-  </div>
-
-  <footer>
-    <div class="conteudo">
-      <h3>CafetariaAlegria</h3>
-
-      <div>
-        <a href="https://pt-pt.facebook.com/pages/category/Musician-Band/Maria-Leal-1072979952789448/"
-          class="fa fa-facebook"></a>
-        <a href="https://twitter.com/ricfazeres" class="fa fa-twitter"></a>
-        <a href="https://www.youtube.com/user/RicFazeres" class="fa fa-youtube"></a>
-      </div>
-      <p>© 2019 Universidade da Madeira</p>
-    </div>
-  </footer>
-  <script>
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-
-  </script>
 </body>
 
 </html>

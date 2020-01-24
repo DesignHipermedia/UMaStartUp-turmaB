@@ -14,63 +14,67 @@
 </head>
 
 <body class="container">
+  <div style ="background-color: white; ">
   <header>
-    <div class ="alinhamento">
-    <div class="block">
-      <h1> <span>Cafetaria</span>Alegria</h1>
-    </div>
+    <div class="alinhamento">
+      <div class="block">
+        <h1 > <span>Cafetaria</span>Alegria</h1>
+      </div>
 
-    <ul>
-      <li><a class="active" href="#home">Inicio</a></li>
-      <li><a href="#news">Café</a></li>
-      <li><a href="#contact">Sobre</a></li>
-      <li><a href="#about">Contacte - nos</a></li>
-    </ul>
-  </div>
+      <ul>
+        <li><a class="" href="index.html">Inicio</a></li>
+        <li><a href="cafe.html">Café</a></li>
+        <li><a class="active" href="sobre.html">Sobre</a></li>
+        <li><a href="contacte.html">Contacte - nos</a></li>
+      </ul>
+    </div>
   </header>
   <div id="main">
 
-    <article>
 
-
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="Imagens\cafe1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="Imagens/cafe2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="Imagens/cafe3.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-
-    </article>
     <nav>
       <h1>CafetariaAlegria</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia amet, laboriosam beatae ipsa aspernatur pariatur tempore quaerat eaque! Consequuntur nihil autem, voluptatibus placeat omnis molestiae? Consequatur quos dolor totam!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia amet, laboriosam beatae ipsa
+        aspernatur pariatur tempore quaerat eaque! Consequuntur nihil autem, voluptatibus placeat omnis molestiae?
+        Consequatur quos dolor totam!</p>
     </nav>
+    <article class="articlesobre">
+      <div class="sobre">
+        
+          <h1>Sobre - nos</h1>
+        
+        <img src="Imagens\cafe.sobre\lake-view-cafe.jpg" alt=""
+          class="imagens">
+          
+        <div class="dividir">
+          <div style="margin-right: 30px;">
+            <h3>O que fazemos ?</h3>
+            <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit minima non placeat veritatis illo
+              adipisci perferendis ex porro ipsa, repudiandae similique ratione aliquam, soluta itaque incidunt commodi.
+              Sunt, vero!</a>
+          </div>
+          <div>
+            <h3>Quem nos somos ?</h3 >
+            <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam iusto quasi tempore consectetur
+              recusandae deserunt impedit sunt, perferendis nobis pariatur harum temporibus omnis earum dolorum, debitis
+              molestias, repellendus error.</a>
+          </div>
+        </div>
+        
 
+      </div>
+      <div class="sobre">
+        <h2> Relembrando </h2>
+        <a>Nos vendemos não só cafe, mas tambem outra coisas, como esta representado nas imagens abaixo.</a>
+        <img src="Imagens\cafe.sobre\latte-and-pastries.jpg" alt="" class="imagens">
+        <img src="Imagens\cafe.sobre\download.jpg" alt="" class="imagens">
+      </div>
+    
+    
+
+
+
+  </article>
 
   </div>
 
@@ -87,37 +91,8 @@
       <p>© 2019 Universidade da Madeira</p>
     </div>
   </footer>
-  <script>
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-
-  </script>
+ 
+  </div>
 </body>
 
 </html>
