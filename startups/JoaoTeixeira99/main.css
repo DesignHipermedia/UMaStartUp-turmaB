@@ -421,7 +421,7 @@ div.desc {
 
 .margemgaleria {
   max-width: 1300px;
-  margin: 30px auto;
+  margin: 30px auto 150px auto;
 }
 
 .containerloja {
@@ -486,6 +486,10 @@ div.desc {
 
 .ralititleimg {
   text-align: center;
+}
+
+div.galleryrali {
+  border: 1px solid #ccc;
 }
 
 div.galleryrali:hover {
