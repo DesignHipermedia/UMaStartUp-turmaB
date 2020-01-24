@@ -70,6 +70,10 @@ footer{
   overflow: hidden;
   color: gray;
 }
+.painel1 {
+  overflow: hidden;
+  color: gray;
+}
 
 .painel .painel_titulo {
   color: steelblue;
