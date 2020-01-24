@@ -10,8 +10,8 @@ body{
 .barra1{
     background-color: rgb(24, 39, 122);
     padding: 1px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 h1{
     margin:10px;
@@ -29,8 +29,8 @@ h1{
     letter-spacing: 5px;
     background-color:white;
     padding: 5px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .barra a {
     display: block;
@@ -137,11 +137,11 @@ input[type=text]:focus {
     display: grid;
     grid-template-columns: 2fr repeat(2, 3fr);
     grid-template-rows: repeat(14, 1fr);
-    grid-column-gap: 2px;
+    grid-column-gap: 3px;
     grid-row-gap: 0px; 
     background-color: white;
-    margin:300px;
-    margin-top: 20px;
+    margin:150px;
+    margin-top: 0px;
     height: 2000px;
     
     }
