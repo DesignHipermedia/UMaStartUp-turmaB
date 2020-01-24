@@ -287,7 +287,7 @@ button{
 }
 
 @media screen and (max-width: 1600px) {
-    .musica a{
+.musica a{
       padding-top: 100px;
       margin: -10px;
       font-size: 15px;
@@ -297,6 +297,9 @@ button{
   margin-right: auto;
   width: 100%;
   justify-content: center;
+}
+.musica {
+    height: 150px;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -311,11 +314,8 @@ button{
   width: 100%;
   justify-content: center;
 }
+.musica {
+    height: 125px;
+}
+}
 
-}
-
-@media screen and (max-width: 1600px) {
-  .musica {
-    height: 150px;
-}
-}
