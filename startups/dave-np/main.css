@@ -6,14 +6,23 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
-
+@keyframes slide_esquerda {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 60%;
   background: linear-gradient(45deg,#353535c5,#427ea7cc);
-  /* background-repeat: repeat-y; */
 
+    animation: 1s ease-out 0s 1 slide_esquerda;
 }
 
 @media only screen and (max-width: 75em) {
