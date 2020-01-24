@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html,body{
+    padding:0;
+    margin:0;
+    background-image: url(./background.jpg);
+    background-size:cover;
+}
+.navegador{
+    width:100vw;
+    height:10vh;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+    color:whitesmoke;
+    list-style-type: none;
+}
+.link{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.register-container{
+    padding:50px;
+    margin:20px;
+    width:40vw;
+    height:60vh;
+    background:transparent;
+    border:5px solid whitesmoke;
+    border-radius:50px;
+    padding-bottom:120px;
+    }
+.formulario{
+    width:100%;
+    height:100%;
+    display:Flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: flex-start;
+}
+.campo{
+    color:white;
+    font-size:22px;
+    font-weight: bold;
+    margin:5px;
+    padding:5px;
+}
+.input{
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid whitesmoke;
+    width:95%;
+    margin:5px;
+    padding:5px;
+    color:white;
+    font-size:22px;
+    font-weight: bold;
+}
+.input-container{
+    width:100%;
+    display:Flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.adventure{
+    width:40vw;
+    height: 30vw;
+    background-image: url(./adventure.jpg);
+    background-size:cover;
+    box-shadow: 1px 1px 26px 0px rgba(0,0,0,0.75);
+}
+.container{
+    width:100%;
+    height:85vh;
+    display:Flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.registar{
+    width:95%;
+    color:orange;
+    display:Flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background:whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration:none;
+    padding:5px;
+    margin-top:10px;
+    border-radius:25px;
+}
