@@ -9,6 +9,19 @@ body {
   line-height: 1.6;
 }
 
+footer{
+  color: grey;
+  padding:60px;
+  text-align: center;
+  font-size: 25px;
+  background-color:lightblue;
+}
+
+
+
+
+
+
 #fundo {
   background-image: url("http://w3msolucoesweb.com.br/wp-content/uploads/2013/08/fundo-criacao-de-sites-em-bauru.jpg");
   background-size: cover;
@@ -54,6 +67,10 @@ body {
   -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.5);
   text-align: justify;
+  overflow: hidden;
+  color: gray;
+}
+.painel1 {
   overflow: hidden;
   color: gray;
 }

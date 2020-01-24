@@ -285,3 +285,37 @@ button{
     background: -webkit-linear-gradient(#66ff66, #ffcc00);
 
 }
+
+@media screen and (max-width: 1600px) {
+.musica a{
+      padding-top: 100px;
+      margin: -10px;
+      font-size: 15px;
+}
+.titulo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+}
+.musica {
+    height: 150px;
+}
+}
+@media screen and (max-width: 1000px) {
+  .musica a{
+    padding-top: 100px;
+    margin: -10px;
+    font-size: 10px;
+}
+.titulo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  justify-content: center;
+}
+.musica {
+    height: 125px;
+}
+}
+
