@@ -81,6 +81,45 @@
   font-size: 24px;
   padding: 16px 32px;
 }
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2:hover .image2 {
+  opacity: 0.3;
+}
+
+.container2:hover .middle2 {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+}
 .titulo{
         color: black;
         text-align: center;
@@ -123,7 +162,16 @@
 <div class="container1">
   <img src="Clayton Kershaw.jpg" alt="Clayton Kershaw" class="image1" style="width:100%">
   <div class="middle1">
-    <div class="text1">Clayton Kershaw é um arremessador canhoto cuja trajetória impecável se traduz em 8 participações no jogo das estrelas, um prêmio para o jogador mais valioso da temporada, 3 prêmios para o melhor arremessador da liga nacional e uma coroa tripla, entre outros prêmios. como candidato unânime ao salão da fama</div>
+    <div class="text1">Clayton Kershaw é um arremessador canhoto cuja trajetória impecável se traduz em 8 participações no jogo das estrelas, um prêmio para o jogador mais valioso da temporada, 3 prêmios para o melhor arremessador da liga nacional e uma coroa tripla, entre outros prêmios. é considerado um candidato unânime ao salão da fama</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container2">
+  <img src="Ken_Griffey_Jr.jpg" alt="Ken_Griffey_Jr" class="image2" style="width:100%">
+  <div class="middle2">
+    <div class="text2">Ken Griffey.Jr é uma lenda eterna do beisebol, com mais de 630 home runs, quase 1900 RBIs e quase 3000 hits, Ken Griffey.Jr estabeleceu-se como um exemplo a seguir para o que é ser um jogador completo em relação ao ofensivo, defensivo e velocidade. Você sempre será lembrado por seu balanço icônico e suave e por seu poder puro</div>
   </div>
 </div>
 </body>
