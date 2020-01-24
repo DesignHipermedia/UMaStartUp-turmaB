@@ -1,12 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Corticeiras Games</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Happycloud | Cloud Services</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+          integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+          type="text/css">
 </head>
+
 <body>
-    startup
+
+<!-- header -->
+<nav class="navbar">
+    <div class="container" style="padding-top: 7px;">
+        <div class="row between-xs">
+            <div class="col-md-2 col-xs-12 center-xs">
+                <div class="box">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="Happycloud logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-10 col-xs-12">
+                <div class="box d-flex end-md center-xs">
+                    <ul class="nav-links">
+                        <li class="nav-item active"><a href="index.html"><i class="fa fa-home"></i>&nbsp; Inicio</a></li>
+                        <li class="nav-item"><a href="services.html"><i class="fa fa-tools"></i>&nbsp; Serviços</a></li>
+                        <li class="nav-item"><a href="about.html"><i class="fa fa-phone"></i>&nbsp; Contacto</a></li>
+                        <li class="nav-item"><a href="login.html"><i class="fa fa-user"></i>&nbsp; Entrar</a></li>
+                        <li class="nav-item "><a href="signup.html"><i class="fas fa-user-plus"></i>&nbsp; Registar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- /header -->
+
+<!-- slideshow -->
+<section class="slideshow">
+    <div class="slideshow-image"></div>
+
+    <div class="container ai-normal">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 ">
+                <div class="box slideshow-wrapper">
+                    <div>
+                        <h2>O Ambiente ideal para o seu site!</h2>
+                        <h4>Muitos recursos, muitas vantagens!</h4>
+                    </div>
+
+                    <div class="slideshow-image1 m-t-30">
+                        <img src="img/cloud.png" alt="Cloud"/>
+                    </div>
+
+                    <div class="d-flex m-t-40" style="justify-content: center">
+                        <label class="select-disk-wrap m-5">
+                            <select class="select-disk">
+                                <option>Quantidade de diskspace</option>
+                                <option>1 TB</option>
+                                <option>10 TB</option>
+                                <option>10 GB</option>
+                                <option>5 GB</option>
+                            </select>
+                        </label>
+
+                        <label class="select-system-wrap m-5">
+                            <select class="select-system">
+                                <option>Sistema operativo</option>
+                                <option>Linux</option>
+                                <option>Windows</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="m-t-10">
+                        <button class="btn-primary" style="width: 250px">Procurar servidor ideal</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /slideshow -->
+<div class="highlights">
+    <div class="container">
+        <div class="row between-md">
+                <div class="col-md-4 col-xs-12">
+                    <div class="px-40 py-60 highlight">
+                        <div class="highlight__icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+                        <div class="highlight__content m-t-10">
+                            <h2>Lorem ipsum dolor </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam doloremque minima,
+                                molestiae necessitatibus repellendus rerum saepe sit. Adipisci, autem!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="px-40 py-60 highlight">
+                        <div class="highlight__icon">
+                            <i class="fa fa-tools"></i>
+                        </div>
+                        <div class="highlight__content m-t-10">
+                            <h2>Lorem ipsum dolor </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam doloremque minima,
+                                molestiae necessitatibus repellendus rerum saepe sit. Adipisci, autem!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="px-40 py-60 highlight">
+                        <div class="highlight__icon">
+                            <i class="fa fa-stethoscope"></i>
+                        </div>
+                        <div class="highlight__content m-t-10">
+                            <h2>Lorem ipsum dolor </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam doloremque minima,
+                                molestiae necessitatibus repellendus rerum saepe sit. Adipisci, autem!</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="prices" style="position: relative">
+    <div class="prices__background"></div>
+    <div class="container" style="position: relative">
+        <div class="row between-md p-t-50">
+            <div class="col-md-4 col-xs-12 center-md center-xs">
+                <div class="prices__item">
+                    <div class="prices__title">BASIC</div>
+                    <div class="prices__table">
+                        <div class="col-md-12 prices__price">20 <span>€</span>
+                            <div class="prices__interval">/month</div>
+                        </div>
+
+                        <div class="col-md-12"><b>1</b> domain name</div>
+                        <div class="col-md-12"><b>200MB</b> disk space</div>
+                        <div class="col-md-12"><b>2000MB</b> bandwidth</div>
+                        <div class="col-md-12"><b>5 </b> email Accounts</div>
+                    </div>
+                    <div class="prices__button">START</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 center-md center-xs">
+                <div class="prices__item prices__item--classic">
+                    <div class="prices__title">CLASSIC</div>
+                    <div class="prices__table">
+                        <div class="col-md-12 prices__price">30 <span>€</span>
+                            <div class="prices__interval">/month</div>
+                        </div>
+                        <div class="col-md-12"><b>1</b> domain name</div>
+                        <div class="col-md-12"><b>200MB</b> disk space</div>
+                        <div class="col-md-12"><b>2000MB</b> bandwidth</div>
+                        <div class="col-md-12"><b>5 </b> email Accounts</div>
+                    </div>
+                    <div class="prices__button">START</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 center-md center-xs">
+                <div class="prices__item">
+                    <div class="prices__title">PRO</div>
+                    <div class="prices__table">
+                        <div class="col-md-12 prices__price">40 <span>€</span>
+                            <div class="prices__interval">/month</div>
+                        </div>
+                        <div class="col-md-12"><b>1</b> domain name</div>
+                        <div class="col-md-12"><b>200MB</b> disk space</div>
+                        <div class="col-md-12"><b>2000MB</b> bandwidth</div>
+                        <div class="col-md-12"><b>5 </b> email Accounts</div>
+                    </div>
+                    <div class="prices__button">START</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="callus" style="position: relative">
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12 m-40">
+                <h1>CONTACTE-NOS</h1>
+                <h4>Iremos responder o mais rapido possivel!</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box callus__content">
+                    <i class="fa fa-phone"></i> (+351) 960 960 960
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box callus__content">
+                    <i class="fa fa-map-marker-alt"></i> Rua da Alfandega nº 55
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="box">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="Happycloud logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-9">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="footer--menu">
+                            <h3 class="m-b-20">Inicio</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="footer--menu">
+                            <h3 class="m-b-20">Planos</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="footer--menu">
+                            <h3 class="m-b-20">Sobre nós</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="second-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5"><a href="#">Happycloud &copy; 2020</a></div>
+            <div class="col-xs-7 end-xs">
+                <ul>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Termos & condições</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 </body>
 </html>

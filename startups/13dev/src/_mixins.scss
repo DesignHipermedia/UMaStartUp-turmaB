@@ -1,0 +1,285 @@
+
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 75, 100);
+$sides: (top, bottom, left, right);
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 48rem;
+
+// Small tablets (portrait view)
+$screen-md-min: 64rem;
+
+// Tablets and small desktops
+$screen-lg-min: 80rem;
+
+// Large tablets and desktops
+$screen-xl-min: 90rem;
+
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+
+    .w-#{$space} {
+      width: #{$space * 1%} !important;
+    }
+
+    .m-#{$space} {
+      margin: #{$space}px !important;
+    }
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+
+    .mx-#{$space} {
+      margin-left: #{$space}px !important;
+      margin-right: #{$space}px !important;
+    }
+    .px-#{$space} {
+      padding-left: #{$space}px !important;
+      padding-right: #{$space}px !important;
+    }
+
+    .my-#{$space} {
+      margin-top: #{$space}px !important;
+      margin-bottom: #{$space}px !important;
+    }
+    .py-#{$space} {
+      padding-top: #{$space}px !important;
+      padding-bottom: #{$space}px !important;
+    }
+
+  }
+}
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+//@mixin highlight($prefix) {
+//  .highlight-#{$prefix} {
+//    background-color: $red;
+//    color: #fff;
+//    &--content {
+//      &--icon {
+//        opacity: .3;
+//        font-size: 120px;
+//        text-align: center;
+//        margin-bottom: 20px;
+//      }
+//
+//      &--text {
+//        text-align: center;
+//
+//      }
+//
+//      &--text p {
+//        text-align: justify;
+//        font-size: 18px;
+//        font-weight: 300;
+//        margin-top: 30px;
+//      }
+//
+//      & > div {
+//        background-color: $dark-red;
+//        width: 18vw;
+//        height: 100%;
+//      }
+//    }
+//  }
+//}
+
+@mixin select($prefix, $icon) {
+  .select-#{$prefix} {
+    border: 0;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    color: $grey;
+    height: 60px;
+    font-weight: 700;
+    padding-left: 35px;
+    width: 300px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &-wrap {
+
+      &:before {
+        content: $icon;
+        font-family: 'Font Awesome 5 Free';
+        color: $grey;
+        position: absolute;
+        left: 4px;
+        top: 18px;
+        z-index: 1;
+        width: 10%;
+        pointer-events: none;
+        font-size: 22px;
+        text-decoration: inherit;
+        font-style: normal;
+        font-weight: 900;
+      }
+
+      &:after {
+        content:"\f107";
+        font-family: 'Font Awesome 5 Free';
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 50px;
+        height: 100%;
+        pointer-events: none;
+        font-size: 22px;
+        background-color: $red;
+        padding: 18px 0;
+        text-decoration: inherit;
+        font-style: normal;
+        font-weight: 900;
+      }
+
+      overflow: hidden;
+      position: relative;
+      display: block;
+      border-bottom: 4px solid $grey;
+      border-radius: 5px;
+      width: auto;
+    }
+  }
+}
+
+//flexbox
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// number, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@each $space in (1,2,3,4) {
+  .flex-#{$space} {
+    @include flex($space);
+  }
+}
+
+// row, row-reverse, column, column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// nowrap, wrap, wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+//flex-direction, flex-wrap
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// order
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+
+// flex-start, flex-end, center, space-between, space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// flex-start, flex-end, center, space-between, space-around, stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+
+// flex-start, flex-end, center, baseline, stretch
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  align-items: $align;
+}
+
+// auto, flex-start, flex-end, center, baseline, stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}

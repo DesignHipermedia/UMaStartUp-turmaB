@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html,body{
+    padding:0;
+    margin:0;
+    background-image: url(./background.jpg);
+    background-size: cover;
+}
+.navegador{
+    width:100vw;
+    height:10vh;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+    color:whitesmoke;
+    list-style-type: none;
+}
+.link{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.grid-container {
+    width:100vw;
+    height:85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". welcomeMessage welcomeMessage welcomeMessage welcomeMessage . . . . ." ". welcomeMessage welcomeMessage welcomeMessage welcomeMessage . welcome welcome welcome welcome" ". message message message message . welcome welcome welcome welcome" ". message message message message . welcome welcome welcome welcome" ". buyNow buyNow buyNow buyNow . welcome welcome welcome welcome" ". . . . . . . . . .";
+}
+.welcome {
+    margin-right:25px;
+    grid-area: welcome;
+    background-image: url(./castleBackground.jpg);
+    background-size:cover;
+    box-shadow: 1px 1px 26px 0px rgba(0,0,0,0.75);
+}
+.welcomeMessage {
+    grid-area: welcomeMessage;
+    display:Flex;
+    justify-content: center;
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size:72px;
+    font-family: 'Poppins', sans-serif;
+}
+.message {
+    grid-area: message;
+    display:Flex;
+    justify-content: center;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+}
+.buyNow {
+    width:100%;
+    height:100%;
+    grid-area: buyNow; 
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.buy{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    font-size:26px;
+    font-weight:bold;
+    color:orange;
+    background:whitesmoke;
+    border-radius:50px;
+    font-family: 'Poppins', sans-serif;
+}

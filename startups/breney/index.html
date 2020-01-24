@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CafetariaAlegria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>CafetariaAlegria</title>
+
 </head>
-<body>
-    startup
+
+<body class="container">
+  <div style ="background-color: white; ">
+  <header>
+    <div class="alinhamento">
+      <div class="block">
+        <h1 > <span>Cafetaria</span>Alegria</h1> 
+      </div>
+
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="cafe.html">Café</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contacte.html">Contacte - nos</a></li>
+      </ul>
+    </div>
+  </header>
+  <div id="main">
+
+    <article class="article_index">
+      <h1 style="text-align: center;">Bem - vindo ao nosso site !</h1>
+      <a>Neste site poderá ver alguns tipos de cafe que nos fazemos para caso que algum dia queira passar por aqui, desfrute do site !</a>
+      
+<div class="tabelinha">
+
+      <div class="slideshow-container" style="padding: 40px 0 0 0; width: 700px; height:400px">
+
+        <div class="mySlides fade  " >
+          <div class="numbertext">1 / 3</div>
+          <img src="Imagens\cafe1.jpg"  style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Imagens/cafe2.jpg"  style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Imagens/cafe3.jpg"  style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      
+      <br>
+    </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+    </article>
+    <nav>
+      
+      <h1>CafetariaAlegria</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur officia amet, laboriosam beatae ipsa aspernatur pariatur tempore quaerat eaque! Consequuntur nihil autem, voluptatibus placeat omnis molestiae? Consequatur quos dolor totam!</p>
+    </nav>
+    
+
+
+  </div>
+
+  <footer>
+    <div class="conteudo">
+      <h3>CafetariaAlegria</h3>
+
+      <div>
+        <a href="https://pt-pt.facebook.com/pages/category/Musician-Band/Maria-Leal-1072979952789448/"
+          class="fa fa-facebook"></a>
+        <a href="https://twitter.com/ricfazeres" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/user/RicFazeres" class="fa fa-youtube"></a>
+      </div>
+      <p>© 2019 Universidade da Madeira</p>
+    </div>
+  </footer>
+  <script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+
+  </script>
+  </div>
 </body>
+
 </html>
