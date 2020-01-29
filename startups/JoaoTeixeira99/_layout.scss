@@ -1,0 +1,472 @@
+// ////// ESTILOS E TAL   ///////
+
+
+// ///////         NAVBAR      ////////
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{  
+  font-family: sans-serif;
+}
+nav {  
+  padding: 1px 20px 1px 1px;
+}
+.menunav{
+  ul {
+    list-style-type: none;
+  }
+  a {  
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .logonav a:hover {
+    text-decoration: none;
+  }
+  .menunav li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  li.logoimgnav{
+    padding: 1px 1px;
+  }
+  .logonav a,
+  .togglenav a {
+    font-size: 20px;
+  }
+  
+}
+
+
+/* Mobile menu */
+.menunav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.togglenav {
+  order: 1;
+}
+.item.buttonnav {
+  order: 2;
+}
+.itemnav {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.itemnav.active {
+  display: block;
+}
+
+
+/* Tablet menu */
+@media all and (min-width: 600px) {
+  .menunav {
+      justify-content: center;
+  }
+  .logonav {
+      flex: 1;
+  }
+  li.logoimgnav{
+    padding: 1px 1px;
+  }
+  .togglenav {
+      flex: 1;
+      text-align: right;
+  }
+  .itemnav.buttonnav {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .togglenav {
+      order: 2;
+  }
+  .buttonnav.secondarynav {
+      border: 0;
+  }
+  .buttonnav a {
+      padding: 7.5px 15px;      
+  }
+  .buttonnav.secondarynav a {
+      background: transparent;    
+  }
+  .buttonnav a:hover {
+      text-decoration: none;
+  }
+  
+}
+
+/* Desktop menu */
+@media all and (min-width: 900px) {
+  .itemnav {
+      display: block;
+      width: auto;
+  }
+  .togglenav {
+      display: none;
+  }
+  .logonav {
+      order: 0;
+  }
+  .itemnav {
+      order: 1;
+  }
+  .buttonnav {
+      order: 2;
+  }
+  .menunav li {
+      padding: 15px 10px;
+  }
+  li.logoimgnav{
+    padding: 1px 1px;
+  }
+  .menu li.buttonnav {
+      padding-right: 0;
+  }
+}
+
+.barrabranca{
+  background-color: white;
+  width: 101%;
+  height: 1px;
+}
+.barravermelha{
+  background-color: #f33f3f;
+  width: 101%;
+  height: 1px;
+}
+
+///////////////// BODY ////////////////
+
+body{
+  .fundo1{
+    background-image: url("imagens/dede2.jpg"); /* The image used */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;  
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+.flex-containertop {
+  display: flex;
+  justify-content: center;  
+}
+
+.flex-containertop > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 0;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.topicons{
+  margin-top: 340px;
+  margin-bottom: 100px;
+}
+
+.tituloloja{
+  text-align: center;
+}
+
+////////// TESTE ///////
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(54, 54, 54);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p{
+  
+  color: white;
+}
+/////////// LOJA /////////////////
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 100px;
+  margin: 20px 300px 100px 300px;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.cardloja:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.containerloja {
+  padding: 2px 16px;
+}
+////////////// DERIFT ///////////// 
+.drifttitleimg{
+  text-align: center;
+  margin: 30px;
+}
+////////////// STANCE /////////////
+
+
+
+div.gallerydrift:hover {
+  border: 1px solid #777;
+}
+
+div.gallerydrift img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 3px 3px 0 3px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stancetitle{
+  text-align: center;
+  margin: 50px 0 0 0
+}
+.stancetitle h1{
+  color: #fff;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 710;
+}
+.stancetitle h1 em{
+  font-style: normal;
+    color: #f33f3f;
+}
+
+.margemgaleria{
+  max-width: 1300px;
+  margin: 30px auto 150px auto;
+}
+/////////////////// LOJA ////////////////////////
+.containerloja {
+  display: flex; 
+  justify-content: center;
+  margin: 10% 25%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 40px;
+}
+
+.containerloja > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+}
+.imgloja img{
+  height: 300px;
+}
+.tituloproduto {
+  margin: 10px;
+}
+.tituloproduto h1{
+  color: black;
+}
+.precoproduto {
+  margin: 10px;
+}
+.descricaoproduto a{
+  color: black;
+}
+.descricaoproduto {
+  margin: 10px;
+}
+.buttonproduto {
+  margin: 10px;
+}
+.button4 {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+///////////////RALI/////////////// 
+.ralititleimg {
+  text-align: center;
+}
+
+div.galleryrali {
+  border: 1px solid #ccc;
+}
+
+div.galleryrali:hover {
+  border: 1px solid #777;
+}
+
+div.galleryrali img {
+  width: 100%;
+  height: auto;
+}
+
+
+////////////// FOOTER /////////////
+footer{
+  padding: 10px; 
+  bottom: 0;  
+  width: 100%;
+}
+  
+
+.flex-footer {  
+  display: flex;
+  width: 100%;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  justify-content: center;
+}
+
+.footeritems{
+  margin: 30px 10px 50px 10px;  
+  flex: 1 1 10%;
+}
+
+
+.footeritems h2{
+  margin-top: 1%;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footeritems a{
+  margin-top: 1%;
+  color: rgba(255,255,255,0.6);
+}
+
+.fa-location-arrow{
+  color: dodgerblue;
+  //margin: 30px;
+}
+
+.container-footer {
+  margin: 0 0 30px 0;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.AboutUsfooter.footeritems {
+  margin-left: 150px;
+}
+
+
+

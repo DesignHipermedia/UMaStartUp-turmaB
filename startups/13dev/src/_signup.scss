@@ -1,0 +1,206 @@
+.signup {
+  position: relative;
+  background-color: #131313;
+  line-height: 1.2em;
+  color: #fff;
+  padding: 60px;
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  small {
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 0;
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  & form .row {
+    margin: 0 auto;
+  }
+
+  & form div {
+    margin-bottom: 10px;
+  }
+
+  & form .row  div {
+    max-width: 500px;
+
+  }
+}
+.input--name {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: $grey;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%;
+
+  &:hover {
+    cursor: text;
+  }
+  &-wrap {
+
+    &:before {
+      content: '\f007';
+      font-family: 'Font Awesome 5 Free';
+      color: $grey;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid $grey;
+    border-radius: 5px;
+    width: auto;
+  }
+}
+
+.input--email {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: $grey;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%;
+
+  &:hover {
+    cursor: text;
+  }
+  &-wrap {
+
+    &:before {
+      content: '\f0e0';
+      font-family: 'Font Awesome 5 Free';
+      color: $grey;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid $grey;
+    border-radius: 5px;
+    width: auto;
+  }
+}
+
+.input--confirm-password {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: $grey;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%;
+
+  &:hover {
+    cursor: text;
+  }
+  &-wrap {
+
+    &:before {
+      content: '\f084';
+      font-family: 'Font Awesome 5 Free';
+      color: $grey;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid $grey;
+    border-radius: 5px;
+    width: auto;
+  }
+}
+
+.input--password {
+  border: 0;
+  font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  color: $grey;
+  height: 60px;
+  font-weight: 700;
+  padding-left: 45px;
+  width: 100%;
+
+  &:hover {
+    cursor: text;
+  }
+  &-wrap {
+
+    &:before {
+      content: '\f084';
+      font-family: 'Font Awesome 5 Free';
+      color: $grey;
+      position: absolute;
+      left: 4px;
+      top: 18px;
+      z-index: 1;
+      width: 10%;
+      pointer-events: none;
+      font-size: 22px;
+      text-decoration: inherit;
+      font-style: normal;
+      font-weight: 900;
+    }
+
+    overflow: hidden;
+    position: relative;
+    display: block;
+    border-bottom: 4px solid $grey;
+    border-radius: 5px;
+    width: auto;
+  }
+}
