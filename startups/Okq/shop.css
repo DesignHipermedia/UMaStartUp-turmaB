@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html,body{
+    padding:0;
+    margin:0;
+    background-image: url(./background.jpg);
+    background-size: cover;
+}
+.navegador{
+    width:100vw;
+    height:10vh;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+    color:whitesmoke;
+    list-style-type: none;
+}
+.link{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.grid-container {
+    width:95vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "HowToBuy HowToBuy HowToBuy HowToBuy  . miniPic miniPic miniPic ." "HowToBuy HowToBuy HowToBuy HowToBuy . miniPic miniPic miniPic ." "HowToBuy HowToBuy HowToBuy HowToBuy . miniPic miniPic miniPic ." "HowToBuy HowToBuy HowToBuy HowToBuy . miniPic miniPic miniPic ." "footer footer footer footer footer footer footer footer footer" "footer footer footer footer footer footer footer footer footer";
+  }
+  
+  .footer {
+      grid-area: footer;
+      display:Flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border:3px solid whitesmoke;
+      width:80%;
+      height:80%;
+      margin-left:10%;
+      border-radius:50px;
+      margin-top:50px;
+    }
+  .footer-container{
+    display:Flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .HowToBuy {
+      grid-area: HowToBuy;
+      width:100%;
+      height:100%;
+      display:Flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left:25px;
+      font-family: 'Poppins', sans-serif;
+      font-size:16px;
+      padding:5px;
+      color:whitesmoke;
+      border:3px solid whitesmoke;
+      border-radius:50px;
+      margin-bottom:-20px;
+    }
+  
+  .miniPic {
+      grid-area: miniPic;
+      background-image: url(./buy.png);
+      background-size:cover;
+      margin-bottom:-20px;
+}
+.socialMediaTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size:32px;
+
+    color:whitesmoke
+}
+.svg{
+    width:50px;
+    height:50px;
+}
