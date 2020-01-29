@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Inicio</title>
 </head>
 <body>
-    <button class="botão">Entrar</button>
-    <div id="botão">
-
+    <div class="descrição">
+        <h1>Dá vida ao basebol</h1>
+        <h2>Junta-te às ligas principais na mais recente edição do simulador de basebol incrivelmente autêntico da Sony San Diego Studio.</h2>
     </div>
+    
+    <a href="Modos do jogo.html" class="botão1">Modos do jogo</a>
+    <a href="Melhores Jogadores.html" class="botão2">Melhores Jogadores</a>
     <style>
+        .descrição {
+            color: black;
+            text-align: center;
+            margin-left: 500px;
+            margin-right: auto;
+            font-family: Arial;
+            font-size: 20px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #1570cd;
+        }
         body {
+            background-image: url("Mlb.jpg.jpg");
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: auto;
             width: 100%;
             display:flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             height:100vh;
             align-items: center;
         }
-        .botão{
+        .botão1{
             background-color:#3d94f6;
 	        border-radius:30px;
 	        display:inline-block;
 	        cursor:pointer;
-	        color:#ffffff;
+	        color: black;
 	        font-family:Arial;
 	        font-size:28px;
 	        padding:22px 31px;
@@ -33,10 +51,31 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .botão:hover{
+        .botão1:hover{
             background-color:#1e62d0;
         }
-        .botão:active{
+        .botão1:active{
+            position:relative;
+	        top:1px;
+        }
+        .botão2{
+            background-color:#3d94f6;
+	        border-radius:30px;
+	        display:inline-block;
+	        cursor:pointer;
+	        color: black;
+	        font-family:Arial;
+	        font-size:28px;
+	        padding:22px 31px;
+	        text-decoration:none;
+            text-shadow:0px 1px 0px #1570cd;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .botão2:hover{
+            background-color:#1e62d0;
+        }
+        .botão2:active{
             position:relative;
 	        top:1px;
         }
