@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 22092c2b47ca1328c5f0bf4f1fc958befbcff073
 .m-t-5 {
   margin-top: 5px !important;
 }
@@ -377,6 +380,8 @@
 
 .m-r-100 {
   margin-right: 100px !important;
+<<<<<<< HEAD
+=======
 =======
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -2646,6 +2651,7 @@ button, input[type="submit"], input[type="reset"] {
 .m-r-100 {
   margin-right: 100px !important;
 >>>>>>> 1d35d9c045ab060d228b055b27e3387abafc95a3
+>>>>>>> 22092c2b47ca1328c5f0bf4f1fc958befbcff073
 }
 
 .p-r-100 {
@@ -2653,6 +2659,9 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 22092c2b47ca1328c5f0bf4f1fc958befbcff073
 header {
   background: yellow;
   height: 10vh;
@@ -2660,6 +2669,8 @@ header {
 
 header {
   padding: 1em;
+<<<<<<< HEAD
+=======
 =======
 .w-100 {
   width: 100% !important;
@@ -3167,5 +3178,6 @@ nav .row {
   -webkit-transition: .2s;
   transition: .2s;
 >>>>>>> 1d35d9c045ab060d228b055b27e3387abafc95a3
+>>>>>>> 22092c2b47ca1328c5f0bf4f1fc958befbcff073
 }
 /*# sourceMappingURL=main.css.map */
