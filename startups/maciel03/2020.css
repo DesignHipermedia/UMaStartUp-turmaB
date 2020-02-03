@@ -9,21 +9,10 @@ body {
   line-height: 1.6;
 }
 
-footer{
-  color: grey;
-  padding:60px;
-  text-align: center;
-  font-size: 25px;
-  background-color:lightblue;
-}
-
-
-
-
 
 
 #fundo {
-  background-image: url("http://w3msolucoesweb.com.br/wp-content/uploads/2013/08/fundo-criacao-de-sites-em-bauru.jpg");
+  background-image: url("https://pplware.sapo.pt/wp-content/uploads/2019/11/Melhor-equioamento-para-jogar_pplware.jpg");
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -43,6 +32,7 @@ footer{
   font-size: 20px;
   color: white;
 }
+
 
 #fundo .button {
   text-decoration: none;
@@ -70,13 +60,10 @@ footer{
   overflow: hidden;
   color: gray;
 }
-.painel1 {
-  overflow: hidden;
-  color: gray;
-}
+
 
 .painel .painel_titulo {
-  color: steelblue;
+  color: black;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -86,4 +73,10 @@ footer{
   display: -ms-flexbox;
   display: flex;
 }
-/*# sourceMappingURL=landing.css.map */
+footer {
+  color: BLACK;
+  padding:60px;
+  text-align:center;
+  font-size:25px;
+  background-color: rgb(114, 110, 110);
+}
